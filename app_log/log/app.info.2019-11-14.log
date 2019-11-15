@@ -355,3 +355,5 @@
 2019-11-14 15:51:50.653 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
 2019-11-14 15:51:50.690 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
 2019-11-14 15:51:50.694 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.239 seconds (JVM running for 3.92)
+2019-11-14 17:32:31.689 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-0} closing ...
+2019-11-14 17:32:31.690 INFO [Thread-15]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
