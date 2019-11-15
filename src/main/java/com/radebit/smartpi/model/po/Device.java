@@ -1,7 +1,9 @@
 package com.radebit.smartpi.model.po;
 
 
-public class Device {
+import java.io.Serializable;
+
+public class Device implements Serializable {
 
   private Integer id;
   private String name;

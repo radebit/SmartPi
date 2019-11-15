@@ -1,7 +1,9 @@
 package com.radebit.smartpi.model.po;
 
 
-public class Group {
+import java.io.Serializable;
+
+public class Group implements Serializable {
 
   private Integer id;
   private String groupName;
