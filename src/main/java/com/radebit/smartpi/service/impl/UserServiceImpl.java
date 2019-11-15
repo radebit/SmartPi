@@ -30,11 +30,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean checkLogin(String username, String password) {
-        String relPassword = userMapper.findUserByUsername(username).getPassword();
-        String md5Password = SecureUtil.md5(password);
-        if (relPassword == null){
+        if (userMapper.findUserByUsername(username)==null){
             return false;
         }
+        String relPassword = userMapper.findUserByUsername(username).getPassword();
+        String md5Password = SecureUtil.md5(password);
         return relPassword.equals(md5Password);
     }
 

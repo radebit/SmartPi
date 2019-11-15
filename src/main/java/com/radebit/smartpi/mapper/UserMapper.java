@@ -31,7 +31,7 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    @UpdateProvider(type = com.radebit.smartpi.provider.UpdateProvider.class,method = "updateUser")
+    @org.apache.ibatis.annotations.UpdateProvider(type = com.radebit.smartpi.provider.UpdateProvider.class,method = "updateUser")
     Integer update(User user);
 
     /**

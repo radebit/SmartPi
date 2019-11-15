@@ -37,7 +37,7 @@ public class UpdateProvider {
                 SET("openid = #{openid}");
             }
 
-            WHERE("id = #{}");
+            WHERE("id = #{id}");
         }}.toString();
     }
 }

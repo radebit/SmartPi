@@ -1,6 +1,8 @@
 package com.radebit.smartpi.controller;
 
 import cn.hutool.core.lang.Assert;
+import cn.hutool.crypto.SecureUtil;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.User;
 import com.radebit.smartpi.model.vo.UserVO;
@@ -9,10 +11,7 @@ import com.radebit.smartpi.utils.ConstantKit;
 import com.radebit.smartpi.utils.Md5TokenGenerator;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 
 import javax.servlet.http.HttpServletRequest;
@@ -33,10 +32,15 @@ public class UserController {
     @Autowired
     private Md5TokenGenerator tokenGenerator;
 
+    /**
+     * 用户登录
+     * @param username
+     * @param password
+     * @return
+     */
     @PostMapping("login")
     public JsonData userLogin(@RequestParam(value = "username") String username,
-                              @RequestParam(value = "password") String password,
-                              HttpServletRequest request) {
+                              @RequestParam(value = "password") String password) {
         Assert.notBlank(username);
         Assert.notBlank(password);
         if (userService.checkLogin(username, password)) {
@@ -60,6 +64,85 @@ public class UserController {
 
     }
 
+    /**
+     * 用户注册
+     * @param username
+     * @param password
+     * @param email
+     * @param phone
+     * @return
+     */
+    @PostMapping("add")
+    public JsonData addUser(@RequestParam(value = "username") String username,
+                            @RequestParam(value = "password") String password,
+                            @RequestParam(value = "email",required = false) String email,
+                            @RequestParam(value = "phone",required = false) String phone){
+        Assert.notBlank(username);
+        Assert.notBlank(password);
+        if (userService.findUserByUsername(username)!=null){
+            return JsonData.buildError("用户已存在！",601);
+        }
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(SecureUtil.md5(password));
+        user.setEmail(email);
+        user.setPhone(phone);
+        if (userService.add(user)==1){
+            return JsonData.buildSuccess(user,"用户注册成功！");
+        }
+        return JsonData.buildError("用户注册失败！");
+    }
+
+
+    /**
+     * 删除用户
+     * @param id
+     * @return
+     */
+    @AuthToken
+    @DeleteMapping("delete")
+    public JsonData delete(@RequestParam(value = "id") int id){
+        Assert.notNull(id);
+        if (id == 1){
+            return JsonData.buildError("请勿删除默认用户！",601);
+        }
+        if (userService.delete(id)==1){
+            return JsonData.buildSuccess(null,"删除成功！");
+        }
+        return JsonData.buildError("删除失败！");
+    }
+
+    /**
+     * 修改密码
+     * @param username
+     * @param oldPassword
+     * @param newPassword
+     * @return
+     */
+    @AuthToken
+    @PutMapping("changePass")
+    public JsonData updateAdmin(@RequestParam(value = "username") String username,
+                                @RequestParam(value = "oldPassword") String oldPassword,
+                                @RequestParam(value = "newPassword") String newPassword){
+        Assert.notBlank(username);
+        Assert.notBlank(oldPassword);
+        Assert.notBlank(newPassword);
+
+        User user = userService.findUserByUsername(username);
+
+        if (user==null){
+            return JsonData.buildError("用户不存在！",601);
+        }
+        if (!SecureUtil.md5(oldPassword).equals(user.getPassword())){
+            return JsonData.buildError("原始密码不匹配",602);
+        }
+        user.setPassword(SecureUtil.md5(newPassword));
+        if (userService.update(user) == 1){
+            return JsonData.buildSuccess(user,"重置密码成功！");
+        }
+        return JsonData.buildError("重置密码失败！");
+
+    }
 
     /**
      * PoToVo
