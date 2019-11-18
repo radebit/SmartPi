@@ -7,7 +7,7 @@ public class Device implements Serializable {
 
   private Integer id;
   private String name;
-  private Integer group;
+  private Integer groupId;
   private Integer ascription;
   private Integer star;
   private String ip;
@@ -36,12 +36,12 @@ public class Device implements Serializable {
   }
 
 
-  public Integer getGroup() {
-    return group;
+  public Integer getGroupId() {
+    return groupId;
   }
 
-  public void setGroup(Integer group) {
-    this.group = group;
+  public void setGroupId(Integer group) {
+    this.groupId = group;
   }
 
 

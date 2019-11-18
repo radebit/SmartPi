@@ -1,0 +1,18 @@
+2019-11-18 21:17:18.454 ERROR[restartedMain]o.s.boot.diagnostics.LoggingFailureAnalysisReporter.report:40 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field deviceService in com.radebit.smartpi.controller.DeviceController required a bean of type 'com.radebit.smartpi.service.DeviceService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.radebit.smartpi.service.DeviceService' in your configuration.
+
