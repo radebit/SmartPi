@@ -1,5 +1,6 @@
 package com.radebit.smartpi.controller;
 
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.Group;
 import com.radebit.smartpi.service.GroupService;
@@ -34,6 +35,7 @@ public class GroupController {
         return JsonData.buildSuccess(groupService.findGroupById(id));
     }
 
+    @AuthToken
     @PutMapping("update")
     public JsonData update(@RequestParam(value = "id") int id,
                            @RequestParam(value = "group_name") String groupName) {
@@ -48,6 +50,7 @@ public class GroupController {
         return JsonData.buildError("编辑失败！");
     }
 
+    @AuthToken
     @DeleteMapping("delete")
     public JsonData delete(@RequestParam(value = "id") int id) {
         if (id == 0){
@@ -59,6 +62,7 @@ public class GroupController {
         return JsonData.buildError("删除失败！");
     }
 
+    @AuthToken
     @PostMapping("add")
     public JsonData add(@RequestParam(value = "group_name") String groupName){
         Group group = new Group();
