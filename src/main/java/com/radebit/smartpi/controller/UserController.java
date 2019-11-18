@@ -14,8 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import redis.clients.jedis.Jedis;
 
-import javax.servlet.http.HttpServletRequest;
-
 /**
  * @Author Rade
  * @Date 2019-11-15 19:22
@@ -107,7 +105,7 @@ public class UserController {
             return JsonData.buildError("请勿删除默认用户！",601);
         }
         if (userService.delete(id)==1){
-            return JsonData.buildSuccess(null,"删除成功！");
+            return JsonData.buildSuccess("删除成功！");
         }
         return JsonData.buildError("删除失败！");
     }

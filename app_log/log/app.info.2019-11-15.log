@@ -1,0 +1,231 @@
+2019-11-15 20:03:11.532 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 3166 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-15 20:03:11.535 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-15 20:03:11.594 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 20:03:11.595 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 20:03:12.437 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-15 20:03:12.440 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 20:03:12.475 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-11-15 20:03:12.833 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6cf8ddfa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 20:03:13.161 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-15 20:03:13.177 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:03:13.186 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-15 20:03:13.187 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-15 20:03:13.265 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-15 20:03:13.265 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1670 ms
+2019-11-15 20:03:14.112 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-15 20:03:14.245 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:03:14.300 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-15 20:03:14.589 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-15 20:03:14.613 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-15 20:03:14.644 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-15 20:03:14.780 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:03:14.817 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-15 20:03:14.821 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 4.128 seconds (JVM running for 4.94)
+2019-11-15 20:04:09.196 INFO [http-nio-8089-exec-1]org.apache.tomcat.util.http.parser.Cookie.log:173 -A cookie header was received [1559559964,1560013448,1560083219; hblid=stfzEiCgVhCUrARo3m39N0H13obFDaBg; olfsk=olfsk48319732679414207; pgv_pvi=8939547648] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2019-11-15 20:04:09.203 INFO [http-nio-8089-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 20:04:09.203 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-15 20:04:09.210 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 6 ms
+2019-11-15 20:04:44.871 WARN [http-nio-8089-exec-4]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [java.lang.IllegalArgumentException: [Assertion failed] - this String argument must have text; it must not be null, empty, or blank]
+2019-11-15 20:04:48.914 INFO [http-nio-8089-exec-5]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-15 20:04:49.101 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [java.lang.NullPointerException]
+2019-11-15 20:05:30.028 WARN [http-nio-8089-exec-8]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [java.lang.NullPointerException]
+2019-11-15 20:09:27.354 INFO [Thread-16]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:09:27.392 INFO [Thread-16]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-15 20:09:27.398 INFO [Thread-16]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2019-11-15 20:09:31.894 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 3202 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-15 20:09:31.897 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-15 20:09:31.956 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 20:09:31.957 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 20:09:32.537 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-15 20:09:32.539 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 20:09:32.559 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-11-15 20:09:32.781 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2fd90ea2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 20:09:32.993 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-15 20:09:33.002 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:09:33.008 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-15 20:09:33.009 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-15 20:09:33.066 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-15 20:09:33.066 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1109 ms
+2019-11-15 20:09:33.654 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-15 20:09:33.753 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:09:33.783 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-15 20:09:33.977 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-15 20:09:33.990 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-15 20:09:34.019 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-15 20:09:34.136 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:09:34.173 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-15 20:09:34.177 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 2.706 seconds (JVM running for 3.517)
+2019-11-15 20:09:39.832 INFO [http-nio-8089-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 20:09:39.832 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-15 20:09:39.839 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 7 ms
+2019-11-15 20:09:39.902 INFO [http-nio-8089-exec-2]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-15 20:15:38.700 INFO [Thread-14]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:15:38.722 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-15 20:15:38.729 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2019-11-15 20:15:43.351 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 3220 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-15 20:15:43.354 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-15 20:15:43.438 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 20:15:43.438 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 20:15:44.196 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-15 20:15:44.198 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 20:15:44.233 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2019-11-15 20:15:44.508 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57ffe8e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 20:15:44.728 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-15 20:15:44.738 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:15:44.744 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-15 20:15:44.745 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-15 20:15:44.801 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-15 20:15:44.801 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1362 ms
+2019-11-15 20:15:45.475 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-15 20:15:45.571 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:15:45.609 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-15 20:15:45.828 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-15 20:15:45.842 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-15 20:15:45.867 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-15 20:15:45.981 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:15:46.009 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-15 20:15:46.012 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.182 seconds (JVM running for 3.879)
+2019-11-15 20:15:52.449 INFO [http-nio-8089-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 20:15:52.450 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-15 20:15:52.460 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 10 ms
+2019-11-15 20:15:52.556 INFO [http-nio-8089-exec-1]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-15 20:25:54.813 INFO [Thread-15]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:25:54.877 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-15 20:25:54.888 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2019-11-15 20:25:59.560 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 3263 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-15 20:25:59.563 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-15 20:25:59.622 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 20:25:59.622 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 20:26:00.343 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-15 20:26:00.345 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 20:26:00.369 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.
+2019-11-15 20:26:00.702 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30336c06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 20:26:01.055 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-15 20:26:01.064 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:26:01.071 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-15 20:26:01.071 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-15 20:26:01.133 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-15 20:26:01.133 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1510 ms
+2019-11-15 20:26:02.011 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-15 20:26:02.136 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:26:02.186 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-15 20:26:02.404 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-15 20:26:02.424 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-15 20:26:02.464 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-15 20:26:02.607 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:26:02.637 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-15 20:26:02.641 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.545 seconds (JVM running for 4.287)
+2019-11-15 20:26:07.970 INFO [http-nio-8089-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 20:26:07.971 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-15 20:26:07.978 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 7 ms
+2019-11-15 20:26:07.989 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - null 
+2019-11-15 20:26:38.030 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token -  
+2019-11-15 20:26:40.639 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 1 
+2019-11-15 20:26:40.650 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - null
+2019-11-15 20:26:43.322 INFO [http-nio-8089-exec-5]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:26:43.326 INFO [http-nio-8089-exec-5]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:26:43.327 INFO [http-nio-8089-exec-5]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820216076
+2019-11-15 20:26:43.328 INFO [http-nio-8089-exec-5]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 587252 ms
+2019-11-15 20:26:43.332 INFO [http-nio-8089-exec-5]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:71 -重置过期时间成功!
+2019-11-15 20:26:43.388 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [java.lang.IllegalArgumentException: [Assertion failed] - this String argument must have text; it must not be null, empty, or blank]
+2019-11-15 20:26:52.628 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:26:52.630 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:26:52.632 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820803332
+2019-11-15 20:26:52.633 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 9300 ms
+2019-11-15 20:26:52.703 INFO [http-nio-8089-exec-6]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-15 20:26:57.429 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:26:57.433 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:26:57.435 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820803332
+2019-11-15 20:26:57.435 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 14103 ms
+2019-11-15 20:27:00.218 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:27:00.221 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:27:00.223 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820803332
+2019-11-15 20:27:00.223 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 16891 ms
+2019-11-15 20:27:00.236 WARN [http-nio-8089-exec-8]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} ]
+2019-11-15 20:27:17.138 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:27:17.141 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:27:17.143 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820803332
+2019-11-15 20:27:17.144 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 33812 ms
+2019-11-15 20:28:16.094 INFO [Thread-16]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:28:16.112 INFO [Thread-16]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-15 20:28:16.116 INFO [Thread-16]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2019-11-15 20:28:20.309 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 3282 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-15 20:28:20.313 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-15 20:28:20.416 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 20:28:20.416 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 20:28:21.209 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-15 20:28:21.212 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 20:28:21.257 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-11-15 20:28:21.542 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1793504] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 20:28:21.764 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-15 20:28:21.773 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:28:21.779 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-15 20:28:21.779 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-15 20:28:21.835 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-15 20:28:21.835 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1418 ms
+2019-11-15 20:28:22.458 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-15 20:28:22.560 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:28:22.597 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-15 20:28:22.828 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-15 20:28:22.841 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-15 20:28:22.874 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-15 20:28:22.963 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:28:22.991 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-15 20:28:22.994 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.096 seconds (JVM running for 3.798)
+2019-11-15 20:28:23.944 INFO [http-nio-8089-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 20:28:23.944 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-15 20:28:23.950 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 6 ms
+2019-11-15 20:28:23.961 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:28:23.974 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:28:23.975 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820803332
+2019-11-15 20:28:23.975 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 100643 ms
+2019-11-15 20:28:23.979 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:71 -重置过期时间成功!
+2019-11-15 20:28:24.032 INFO [http-nio-8089-exec-1]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-15 20:28:27.980 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:28:27.982 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:28:27.983 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820903979
+2019-11-15 20:28:27.983 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 4004 ms
+2019-11-15 20:28:27.993 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} ]
+2019-11-15 20:28:33.681 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:28:33.683 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:28:33.685 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820903979
+2019-11-15 20:28:33.685 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 9706 ms
+2019-11-15 20:28:33.692 WARN [http-nio-8089-exec-4]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Parsing error was found in mapping #{}.  Check syntax #{property|(expression), var1=value1, var2=value2, ...} ]
+2019-11-15 20:29:50.223 INFO [Thread-15]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:29:50.250 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-15 20:29:50.260 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2019-11-15 20:29:54.442 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 3289 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-15 20:29:54.445 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-15 20:29:54.523 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 20:29:54.524 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 20:29:55.187 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-15 20:29:55.189 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-15 20:29:55.219 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.
+2019-11-15 20:29:55.442 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7665181] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-15 20:29:55.670 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-15 20:29:55.679 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:29:55.685 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-15 20:29:55.685 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-15 20:29:55.744 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-15 20:29:55.744 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1220 ms
+2019-11-15 20:29:56.354 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-15 20:29:56.451 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:29:56.486 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-15 20:29:56.690 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-15 20:29:56.706 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-15 20:29:56.732 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-15 20:29:56.842 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-15 20:29:56.872 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-15 20:29:56.876 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 2.868 seconds (JVM running for 3.551)
+2019-11-15 20:29:59.036 INFO [http-nio-8089-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 20:29:59.036 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-15 20:29:59.043 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 6 ms
+2019-11-15 20:29:59.054 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-15 20:29:59.066 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-15 20:29:59.067 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573820903979
+2019-11-15 20:29:59.067 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 95088 ms
+2019-11-15 20:29:59.119 INFO [http-nio-8089-exec-1]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-15 20:30:48.244 INFO [Thread-14]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 20:30:48.258 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-15 20:30:48.261 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed

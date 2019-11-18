@@ -1,6 +1,7 @@
 package com.radebit.smartpi.provider;
 
 
+import com.radebit.smartpi.model.po.Group;
 import com.radebit.smartpi.model.po.User;
 import org.apache.ibatis.jdbc.SQL;
 
@@ -35,6 +36,24 @@ public class UpdateProvider {
             }
             if (user.getOpenid() != null) {
                 SET("openid = #{openid}");
+            }
+
+            WHERE("id = #{id}");
+        }}.toString();
+    }
+
+    /**
+     * 分组信息条件更新
+     * @param group
+     * @return
+     */
+    public String updateGroup(final Group group){
+        return new SQL() {{
+
+            UPDATE("dev_group");
+
+            if (group.getGroupName() != null){
+                SET("group_name = #{groupName}");
             }
 
             WHERE("id = #{id}");

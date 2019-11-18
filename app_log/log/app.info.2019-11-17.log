@@ -1,0 +1,72 @@
+2019-11-17 14:56:30.155 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 2476 (/Users/rade/Documents/JavaEE/SmartPi/target/classes started by rade in /Users/rade/Documents/JavaEE/SmartPi)
+2019-11-17 14:56:30.158 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2019-11-17 14:56:30.243 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-17 14:56:30.243 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-17 14:56:30.966 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-17 14:56:30.971 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-11-17 14:56:31.014 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2019-11-17 14:56:31.320 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1aaaa1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-17 14:56:31.612 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2019-11-17 14:56:31.626 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2019-11-17 14:56:31.634 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2019-11-17 14:56:31.634 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-17 14:56:31.718 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2019-11-17 14:56:31.719 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1475 ms
+2019-11-17 14:56:32.503 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-17 14:56:32.619 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-17 14:56:32.670 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2019-11-17 14:56:32.938 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2019-11-17 14:56:32.961 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2019-11-17 14:56:32.993 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2019-11-17 14:56:33.152 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2019-11-17 14:56:33.184 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2019-11-17 14:56:33.187 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.534 seconds (JVM running for 4.462)
+2019-11-17 14:58:32.873 INFO [http-nio-8089-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-17 14:58:32.873 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2019-11-17 14:58:32.880 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 6 ms
+2019-11-17 14:58:32.892 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-17 14:58:32.908 INFO [http-nio-8089-exec-1]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - null
+2019-11-17 15:02:39.009 INFO [http-nio-8089-exec-5]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2019-11-17 15:02:45.896 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - f351b7f3d0749b574f2ec13bcb6d747f 
+2019-11-17 15:02:45.898 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - null
+2019-11-17 15:02:55.122 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:02:55.124 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:02:55.126 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974159222
+2019-11-17 15:02:55.126 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 15904 ms
+2019-11-17 15:03:00.599 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:03:00.601 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:03:00.602 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974159222
+2019-11-17 15:03:00.602 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 21380 ms
+2019-11-17 15:03:04.898 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:03:04.900 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:03:04.901 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974159222
+2019-11-17 15:03:04.901 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 25679 ms
+2019-11-17 15:03:05.573 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:03:05.576 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:03:05.577 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974159222
+2019-11-17 15:03:05.578 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 26356 ms
+2019-11-17 15:04:16.021 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2019-11-17 15:04:26.978 WARN [http-nio-8089-exec-4]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2019-11-17 15:04:29.941 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2019-11-17 15:05:18.968 WARN [http-nio-8089-exec-6]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2019-11-17 15:05:29.652 WARN [http-nio-8089-exec-7]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2019-11-17 15:05:56.593 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:05:56.595 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:05:56.596 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974159222
+2019-11-17 15:05:56.596 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 197374 ms
+2019-11-17 15:05:56.598 INFO [http-nio-8089-exec-8]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:71 -重置过期时间成功!
+2019-11-17 15:06:01.574 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:06:01.575 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:06:01.576 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974356598
+2019-11-17 15:06:01.576 INFO [http-nio-8089-exec-9]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 4978 ms
+2019-11-17 15:06:04.267 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:06:04.269 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:06:04.271 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974356598
+2019-11-17 15:06:04.271 INFO [http-nio-8089-exec-10]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 7673 ms
+2019-11-17 15:06:05.724 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 883b61c1f9b564319254778e9e2c156d 
+2019-11-17 15:06:05.727 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
+2019-11-17 15:06:05.728 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1573974356598
+2019-11-17 15:06:05.729 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 9131 ms
+2019-11-17 21:07:11.823 INFO [Thread-15]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-17 21:07:11.843 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-17 21:07:11.845 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed

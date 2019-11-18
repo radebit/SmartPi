@@ -1,7 +1,6 @@
 package com.radebit.smartpi.service;
 
 import com.radebit.smartpi.model.po.User;
-import org.springframework.stereotype.Service;
 
 /**
  * @Author Rade
