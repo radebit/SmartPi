@@ -16,6 +16,7 @@ public class Device implements Serializable {
   private java.sql.Timestamp lastOnlineTime;
   private String remark;
   private String coverImg;
+  private Integer isOnline;
 
 
   public Integer getId() {
@@ -116,4 +117,11 @@ public class Device implements Serializable {
     this.coverImg = coverImg;
   }
 
+  public Integer getIsOnline() {
+    return isOnline;
+  }
+
+  public void setIsOnline(Integer isOnline) {
+    this.isOnline = isOnline;
+  }
 }

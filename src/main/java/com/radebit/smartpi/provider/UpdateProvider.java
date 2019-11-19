@@ -101,6 +101,9 @@ public class UpdateProvider {
             if (device.getCoverImg() != null) {
                 SET("cover_img = #{coverImg}");
             }
+            if (device.getIsOnline() != null) {
+                SET("is_online = #{isOnline}");
+            }
 
             WHERE("id = #{id}");
         }}.toString();

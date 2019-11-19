@@ -19,6 +19,8 @@ public interface DeviceService {
 
     List<Device> findDeviceByGroup(int groupId);
 
+    List<Device> findDeviceIsOnline(int isOnline);
+
     Integer update(Device device);
 
     Integer delete(int id);

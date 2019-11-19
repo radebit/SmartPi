@@ -40,6 +40,11 @@ public class DeviceServiceImpl implements DeviceService {
     }
 
     @Override
+    public List<Device> findDeviceIsOnline(int isOnline) {
+        return deviceMapper.findDeviceIsOnline(isOnline);
+    }
+
+    @Override
     public Integer update(Device device) {
         return deviceMapper.update(device);
     }

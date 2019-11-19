@@ -22,6 +22,7 @@ public class DeviceVO implements Serializable {
     private java.sql.Timestamp lastOnlineTime;
     private String remark;
     private String coverImg;
+    private Integer isOnline;
 
     public Integer getId() {
         return id;
@@ -125,5 +126,13 @@ public class DeviceVO implements Serializable {
 
     public void setCoverImg(String coverImg) {
         this.coverImg = coverImg;
+    }
+
+    public Integer getIsOnline() {
+        return isOnline;
+    }
+
+    public void setIsOnline(Integer isOnline) {
+        this.isOnline = isOnline;
     }
 }
