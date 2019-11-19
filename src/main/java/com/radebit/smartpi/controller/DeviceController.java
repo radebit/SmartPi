@@ -7,6 +7,7 @@ import com.radebit.smartpi.model.po.Device;
 import com.radebit.smartpi.model.vo.DeviceVO;
 import com.radebit.smartpi.service.DeviceService;
 import com.radebit.smartpi.service.GroupService;
+import com.radebit.smartpi.service.UserService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +34,9 @@ public class DeviceController {
 
     @Autowired
     private GroupService groupService;
+
+    @Autowired
+    private UserService userService;
 
     @GetMapping("findAll")
     public JsonData findAll(@RequestParam(value = "page", defaultValue = "1") int page,
@@ -98,8 +102,10 @@ public class DeviceController {
         DeviceVO deviceVO = new DeviceVO();
         deviceVO.setId(device.getId());
         deviceVO.setName(device.getName());
-        deviceVO.setGroup(String.valueOf(device.getGroupId()));
-        deviceVO.setAscription(device.getAscription());
+        deviceVO.setGroupId(device.getGroupId());
+        deviceVO.setGroupName(groupService.findGroupById(device.getGroupId()).getGroupName());
+        deviceVO.setAscriptionId(device.getAscription());
+        deviceVO.setAscriptionName(userService.findUserById(device.getAscription()).getUsername());
         deviceVO.setStar(device.getStar());
         deviceVO.setIp(device.getIp());
         deviceVO.setAutoControl(device.getAutoControl());

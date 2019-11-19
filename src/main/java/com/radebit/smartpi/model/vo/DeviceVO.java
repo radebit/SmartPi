@@ -11,8 +11,10 @@ import java.sql.Timestamp;
 public class DeviceVO implements Serializable {
     private Integer id;
     private String name;
-    private String group;
-    private Integer ascription;
+    private Integer groupId;
+    private String groupName;
+    private Integer ascriptionId;
+    private String ascriptionName;
     private Integer star;
     private String ip;
     private Integer autoControl;
@@ -37,20 +39,36 @@ public class DeviceVO implements Serializable {
         this.name = name;
     }
 
-    public String getGroup() {
-        return group;
+    public Integer getGroupId() {
+        return groupId;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public void setGroupId(Integer groupId) {
+        this.groupId = groupId;
     }
 
-    public Integer getAscription() {
-        return ascription;
+    public String getGroupName() {
+        return groupName;
     }
 
-    public void setAscription(Integer ascription) {
-        this.ascription = ascription;
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
+    }
+
+    public Integer getAscriptionId() {
+        return ascriptionId;
+    }
+
+    public void setAscriptionId(Integer ascriptionId) {
+        this.ascriptionId = ascriptionId;
+    }
+
+    public String getAscriptionName() {
+        return ascriptionName;
+    }
+
+    public void setAscriptionName(String ascriptionName) {
+        this.ascriptionName = ascriptionName;
     }
 
     public Integer getStar() {
