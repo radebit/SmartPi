@@ -1,5 +1,6 @@
 package com.radebit.smartpi.controller;
 
+import cn.hutool.core.lang.Assert;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.radebit.smartpi.domain.JsonData;
@@ -10,11 +11,9 @@ import com.radebit.smartpi.service.GroupService;
 import com.radebit.smartpi.service.UserService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -47,8 +46,8 @@ public class DeviceController {
      * @return
      */
     @GetMapping("findAll")
-    public JsonData findAll(@RequestParam(value = "page", defaultValue = "1") int page,
-                            @RequestParam(value = "size", defaultValue = "10") int size) {
+    public JsonData findAll(@RequestParam(value = "page", defaultValue = "1") Integer page,
+                            @RequestParam(value = "size", defaultValue = "10") Integer size) {
         PageHelper.startPage(page, size);
         List<Device> list = deviceService.findAll();
         List<DeviceVO> listVO = new ArrayList<>();
@@ -71,7 +70,7 @@ public class DeviceController {
      * @return
      */
     @GetMapping("findById")
-    public JsonData findById(@RequestParam(value = "id") int id) {
+    public JsonData findById(@RequestParam(value = "id") Integer id) {
         return JsonData.buildSuccess(PoToVo(deviceService.findDeviceById(id)));
     }
 
@@ -85,8 +84,8 @@ public class DeviceController {
      */
     @GetMapping("findByName")
     public JsonData findByName(@RequestParam(value = "name") String name,
-                               @RequestParam(value = "page", defaultValue = "1") int page,
-                               @RequestParam(value = "size", defaultValue = "10") int size) {
+                               @RequestParam(value = "page", defaultValue = "1") Integer page,
+                               @RequestParam(value = "size", defaultValue = "10") Integer size) {
         PageHelper.startPage(page, size);
         List<Device> list = deviceService.findDeviceByName(name);
         List<DeviceVO> listVO = new ArrayList<>();
@@ -111,9 +110,9 @@ public class DeviceController {
      * @return
      */
     @GetMapping("findByGroupId")
-    public JsonData findByGroup(@RequestParam(value = "group_id") int groupId,
-                                @RequestParam(value = "page", defaultValue = "1") int page,
-                                @RequestParam(value = "size", defaultValue = "10") int size) {
+    public JsonData findByGroup(@RequestParam(value = "group_id") Integer groupId,
+                                @RequestParam(value = "page", defaultValue = "1") Integer page,
+                                @RequestParam(value = "size", defaultValue = "10") Integer size) {
         if (groupService.findGroupById(groupId) == null) {
             return JsonData.buildError("没有相关分组！", 601);
         }
@@ -142,9 +141,9 @@ public class DeviceController {
      * @return
      */
     @GetMapping("findIsOnline")
-    public JsonData findIsOnline(@RequestParam(value = "is_online") int isOnline,
-                                 @RequestParam(value = "page", defaultValue = "1") int page,
-                                 @RequestParam(value = "size", defaultValue = "10") int size) {
+    public JsonData findIsOnline(@RequestParam(value = "is_online") Integer isOnline,
+                                 @RequestParam(value = "page", defaultValue = "1") Integer page,
+                                 @RequestParam(value = "size", defaultValue = "10") Integer size) {
         PageHelper.startPage(page, size);
         List<Device> list = deviceService.findDeviceIsOnline(isOnline);
         List<DeviceVO> listVO = new ArrayList<>();
@@ -158,6 +157,55 @@ public class DeviceController {
         data.put("current_page", page);//当前页
         data.put("data", pageInfo.getList());//数据
         return JsonData.buildSuccess(data);
+    }
+
+    /**
+     * 更新设备信息
+     *
+     * @param name
+     * @param groupId
+     * @param ascription
+     * @param star
+     * @param ip
+     * @param autoControl
+     * @param lastOnlineTime
+     * @param remark
+     * @param coverImg
+     * @param isOnline
+     * @return
+     */
+    @PutMapping("update")
+    public JsonData update(@RequestParam(value = "id")Integer id,
+                           @RequestParam(value = "name",required = false)String name,
+                           @RequestParam(value = "group_id",required = false)Integer groupId,
+                           @RequestParam(value = "ascription",required = false)Integer ascription,
+                           @RequestParam(value = "star",required = false)Integer star,
+                           @RequestParam(value = "ip",required = false)String ip,
+                           @RequestParam(value = "auto_control",required = false)Integer autoControl,
+                           @RequestParam(value = "last_online_time",required = false)String lastOnlineTime,
+                           @RequestParam(value = "remark",required = false)String remark,
+                           @RequestParam(value = "cover_img",required = false)String coverImg,
+                           @RequestParam(value = "is_online",required = false)Integer isOnline){
+
+        Assert.isNull(id);
+        Device device = new Device();
+        device.setId(id);
+        device.setName(name);
+        device.setAscription(ascription);
+        device.setGroupId(groupId);
+        device.setStar(star);
+        device.setIp(ip);
+        device.setAutoControl(autoControl);
+        device.setLastOnlineTime(Timestamp.valueOf(lastOnlineTime));
+        device.setRemark(remark);
+        device.setCoverImg(coverImg);
+        device.setId(isOnline);
+
+        if (deviceService.update(device) == 1){
+            return JsonData.buildSuccess(deviceService.findDeviceById(id),"修改成功！");
+        }
+        return JsonData.buildError("修改失败！");
+
     }
 
     /**
