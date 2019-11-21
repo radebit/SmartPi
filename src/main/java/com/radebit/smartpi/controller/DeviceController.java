@@ -1,6 +1,5 @@
 package com.radebit.smartpi.controller;
 
-import cn.hutool.core.lang.Assert;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.radebit.smartpi.domain.JsonData;
@@ -14,10 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Author Rade
@@ -175,19 +171,18 @@ public class DeviceController {
      * @return
      */
     @PutMapping("update")
-    public JsonData update(@RequestParam(value = "id")Integer id,
-                           @RequestParam(value = "name",required = false)String name,
-                           @RequestParam(value = "group_id",required = false)Integer groupId,
-                           @RequestParam(value = "ascription",required = false)Integer ascription,
-                           @RequestParam(value = "star",required = false)Integer star,
-                           @RequestParam(value = "ip",required = false)String ip,
-                           @RequestParam(value = "auto_control",required = false)Integer autoControl,
-                           @RequestParam(value = "last_online_time",required = false)String lastOnlineTime,
-                           @RequestParam(value = "remark",required = false)String remark,
-                           @RequestParam(value = "cover_img",required = false)String coverImg,
-                           @RequestParam(value = "is_online",required = false)Integer isOnline){
+    public JsonData update(@RequestParam(value = "id") Integer id,
+                           @RequestParam(value = "name", required = false) String name,
+                           @RequestParam(value = "group_id", required = false) Integer groupId,
+                           @RequestParam(value = "ascription", required = false) Integer ascription,
+                           @RequestParam(value = "star", required = false) Integer star,
+                           @RequestParam(value = "ip", required = false) String ip,
+                           @RequestParam(value = "auto_control", required = false) Integer autoControl,
+                           @RequestParam(value = "last_online_time", required = false) String lastOnlineTime,
+                           @RequestParam(value = "remark", required = false) String remark,
+                           @RequestParam(value = "cover_img", required = false) String coverImg,
+                           @RequestParam(value = "is_online", required = false) Integer isOnline) {
 
-        Assert.isNull(id);
         Device device = new Device();
         device.setId(id);
         device.setName(name);
@@ -201,11 +196,65 @@ public class DeviceController {
         device.setCoverImg(coverImg);
         device.setId(isOnline);
 
-        if (deviceService.update(device) == 1){
-            return JsonData.buildSuccess(deviceService.findDeviceById(id),"修改成功！");
+        if (deviceService.update(device) == 1) {
+            return JsonData.buildSuccess(deviceService.findDeviceById(id), "修改成功！");
         }
         return JsonData.buildError("修改失败！");
 
+    }
+
+    /**
+     * 删除设备
+     *
+     * @param id
+     * @return
+     */
+    @DeleteMapping("delete")
+    public JsonData delete(@RequestParam(value = "id") Integer id) {
+        if (deviceService.findDeviceById(id) == null) {
+            return JsonData.buildError("设备不存在！", 601);
+        }
+        if (deviceService.delete(id) == 1) {
+            return JsonData.buildSuccess("删除成功！");
+        }
+        return JsonData.buildError("删除失败！");
+    }
+
+    /**
+     * 添加设备
+     *
+     * @param name
+     * @param groupId
+     * @param ascription
+     * @param ip
+     * @param autoControl
+     * @param remark
+     * @return
+     */
+    @PostMapping("add")
+    public JsonData add(@RequestParam(value = "name") String name,
+                        @RequestParam(value = "group_id") Integer groupId,
+                        @RequestParam(value = "ascription") String ascription,
+                        @RequestParam(value = "ip", required = false) String ip,
+                        @RequestParam(value = "auto_control", required = false) Integer autoControl,
+                        @RequestParam(value = "remark", required = false) String remark) {
+
+        if (userService.findUserByUsername(ascription) == null) {
+            return JsonData.buildError("设备所属人有误！", 601);
+        }
+        Integer ascriptionId = userService.findUserByUsername(ascription).getId();
+        Device device = new Device();
+        device.setName(name);
+        device.setGroupId(groupId);
+        device.setAscription(ascriptionId);
+        device.setIp(ip);
+        device.setAutoControl(autoControl);
+        device.setCreateTime(new Timestamp(new Date().getTime()));
+        device.setRemark(remark);
+        if (deviceService.add(device) == 1) {
+            return JsonData.buildSuccess(device, "添加设备成功！");
+        }
+        return JsonData.buildError("添加失败！");
     }
 
     /**
@@ -232,4 +281,5 @@ public class DeviceController {
         deviceVO.setIsOnline(device.getIsOnline());
         return deviceVO;
     }
+
 }
