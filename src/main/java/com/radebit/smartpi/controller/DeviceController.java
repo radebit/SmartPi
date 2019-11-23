@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.Device;
 import com.radebit.smartpi.model.vo.DeviceVO;
@@ -170,6 +171,7 @@ public class DeviceController {
      * @param isOnline
      * @return
      */
+    @AuthToken
     @PutMapping("update")
     public JsonData update(@RequestParam(value = "id") Integer id,
                            @RequestParam(value = "name", required = false) String name,
@@ -209,6 +211,7 @@ public class DeviceController {
      * @param id
      * @return
      */
+    @AuthToken
     @DeleteMapping("delete")
     public JsonData delete(@RequestParam(value = "id") Integer id) {
         if (deviceService.findDeviceById(id) == null) {
@@ -231,6 +234,7 @@ public class DeviceController {
      * @param remark
      * @return
      */
+    @AuthToken
     @PostMapping("add")
     public JsonData add(@RequestParam(value = "name") String name,
                         @RequestParam(value = "group_id") Integer groupId,

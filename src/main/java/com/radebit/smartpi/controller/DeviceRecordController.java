@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.DeviceRecord;
 import com.radebit.smartpi.service.DeviceRecordService;
@@ -116,6 +117,7 @@ public class DeviceRecordController {
      * @param id
      * @return
      */
+    @AuthToken
     @DeleteMapping("delete")
     public JsonData delete(@RequestParam(value = "id") Long id) {
         if (deviceRecordService.findById(id) == null) {
@@ -144,6 +146,7 @@ public class DeviceRecordController {
      * @param airQuality
      * @return
      */
+    @AuthToken
     @PostMapping("add")
     public JsonData add(@RequestParam(value = "device_id") Integer deviceId,
                         @RequestParam(value = "air_temp") String airTemp,
