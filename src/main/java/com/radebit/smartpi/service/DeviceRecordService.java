@@ -22,5 +22,7 @@ public interface DeviceRecordService {
 
     DeviceRecord findById(Long id);
 
+    Integer delete(Long id);
+
     Integer add(DeviceRecord deviceRecord);
 }

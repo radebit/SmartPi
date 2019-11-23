@@ -1,6 +1,7 @@
 package com.radebit.smartpi.mapper;
 
 import com.radebit.smartpi.model.po.DeviceRecord;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Select;
@@ -29,6 +30,9 @@ public interface DeviceRecordMapper {
 
     @Select("select * from device_record where id = #{id}")
     DeviceRecord findById(Long id);
+
+    @Delete("delete from device_record where id = #{id}")
+    Integer delete(Long id);
 
     @Insert("INSERT INTO `smartpi`.`device_record`(`device_id`, `record_time`, `air_temp`, `air_humidity`, `soil_moisture`, `co2`, `n_content`, `p_content`, `k_content`, `soil_fertility`, `ph`, `illumination`, `air_quality`) VALUES (#{deviceId},#{recordTime},#{airTemp},#{airHumidity},#{soilMoisture},#{co2},#{nContent},#{pContent},#{kContent},#{soilFertility},#{ph},#{illumination},#{airQuality});")
     @Options(useGeneratedKeys = true,keyColumn = "id",keyProperty = "id")

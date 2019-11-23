@@ -46,6 +46,11 @@ public class DeviceRecordServiceImpl implements DeviceRecordService {
     }
 
     @Override
+    public Integer delete(Long id) {
+        return deviceRecordMapper.delete(id);
+    }
+
+    @Override
     public Integer add(DeviceRecord deviceRecord) {
         return deviceRecordMapper.add(deviceRecord);
     }
