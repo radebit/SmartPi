@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.DeviceRecord;
 import com.radebit.smartpi.service.DeviceRecordService;
+import com.radebit.smartpi.service.DeviceService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +28,9 @@ public class DeviceRecordController {
 
     @Autowired
     private DeviceRecordService deviceRecordService;
+
+    @Autowired
+    private DeviceService deviceService;
 
     /**
      * 获取全部记录
@@ -153,6 +157,10 @@ public class DeviceRecordController {
                         @RequestParam(value = "ph") String ph,
                         @RequestParam(value = "illumination") String illumination,
                         @RequestParam(value = "air_quality") String airQuality) {
+
+        if (deviceService.findDeviceById(deviceId)==null){
+            return JsonData.buildError("设备不存在！",601);
+        }
 
         DeviceRecord deviceRecord = new DeviceRecord();
         deviceRecord.setDeviceId(deviceId);
