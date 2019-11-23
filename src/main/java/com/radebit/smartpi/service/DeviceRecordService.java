@@ -14,11 +14,13 @@ public interface DeviceRecordService {
 
     List<DeviceRecord> findAll();
 
-    List<DeviceRecord> findByDeviceId(Integer id);
+    List<DeviceRecord> findByDeviceId(int id);
 
-    List<DeviceRecord> findByTime(Timestamp startTime, Timestamp endTime);
+    List<DeviceRecord> findAllByTime(Timestamp startTime, Timestamp endTime);
 
-    DeviceRecord findById(Integer id);
+    List<DeviceRecord> findDeviceRecordByTime(int deviceId,Timestamp startTime, Timestamp endTime);
+
+    DeviceRecord findById(Long id);
 
     Integer add(DeviceRecord deviceRecord);
 }

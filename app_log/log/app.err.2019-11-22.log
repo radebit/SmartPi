@@ -1,0 +1,36 @@
+2019-11-22 16:34:51.798 ERROR[restartedMain]o.s.boot.diagnostics.LoggingFailureAnalysisReporter.report:40 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field deviceRecordService in com.radebit.smartpi.controller.DeviceRecordController required a bean of type 'com.radebit.smartpi.service.DeviceRecordService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.radebit.smartpi.service.DeviceRecordService' in your configuration.
+
+2019-11-22 16:49:04.929 ERROR[restartedMain]o.s.boot.diagnostics.LoggingFailureAnalysisReporter.report:40 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field deviceRecordService in com.radebit.smartpi.controller.DeviceRecordController required a bean of type 'com.radebit.smartpi.service.DeviceRecordService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.radebit.smartpi.service.DeviceRecordService' in your configuration.
+

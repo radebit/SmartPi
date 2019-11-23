@@ -19,13 +19,16 @@ public interface DeviceRecordMapper {
     List<DeviceRecord> findAll();
 
     @Select("select * from device_record where device_id = #{id}")
-    List<DeviceRecord> findByDeviceId(Integer id);
+    List<DeviceRecord> findByDeviceId(int id);
 
-    @Select("select * FROM device_record where record_time between  '${startTime}'  and '${endTime}'")
-    List<DeviceRecord> findByTime(Timestamp startTime, Timestamp endTime);
+    @Select("select * FROM device_record where record_time between '${startTime}' and '${endTime}'")
+    List<DeviceRecord> findAllByTime(Timestamp startTime, Timestamp endTime);
+
+    @Select("select * FROM device_record where device_id = #{id} and record_time between '${startTime}' and '${endTime}'")
+    List<DeviceRecord> findDeviceRecordByTime(int id,Timestamp startTime, Timestamp endTime);
 
     @Select("select * from device_record where id = #{id}")
-    DeviceRecord findById(Integer id);
+    DeviceRecord findById(Long id);
 
     @Insert("INSERT INTO `smartpi`.`device_record`(`device_id`, `record_time`, `air_temp`, `air_humidity`, `soil_moisture`, `co2`, `n_content`, `p_content`, `k_content`, `soil_fertility`, `ph`, `illumination`, `air_quality`) VALUES (#{deviceId},#{recordTime},#{airTemp},#{airHumidity},#{soilMoisture},#{co2},#{nContent},#{pContent},#{kContent},#{soilFertility},#{ph},#{illumination},#{airQuality});")
     @Options(useGeneratedKeys = true,keyColumn = "id",keyProperty = "id")

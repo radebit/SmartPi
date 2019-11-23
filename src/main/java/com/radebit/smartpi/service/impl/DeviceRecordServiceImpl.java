@@ -2,6 +2,7 @@ package com.radebit.smartpi.service.impl;
 
 import com.radebit.smartpi.mapper.DeviceRecordMapper;
 import com.radebit.smartpi.model.po.DeviceRecord;
+import com.radebit.smartpi.service.DeviceRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ import java.util.List;
  * 说明：
  */
 @Service
-public class DeviceRecordServiceImpl implements DeviceRecordMapper {
+public class DeviceRecordServiceImpl implements DeviceRecordService {
 
     @Autowired
     private DeviceRecordMapper deviceRecordMapper;
@@ -25,17 +26,22 @@ public class DeviceRecordServiceImpl implements DeviceRecordMapper {
     }
 
     @Override
-    public List<DeviceRecord> findByDeviceId(Integer id) {
+    public List<DeviceRecord> findByDeviceId(int id) {
         return deviceRecordMapper.findByDeviceId(id);
     }
 
     @Override
-    public List<DeviceRecord> findByTime(Timestamp startTime, Timestamp endTime) {
-        return deviceRecordMapper.findByTime(startTime,endTime);
+    public List<DeviceRecord> findAllByTime(Timestamp startTime, Timestamp endTime) {
+        return deviceRecordMapper.findAllByTime(startTime,endTime);
     }
 
     @Override
-    public DeviceRecord findById(Integer id) {
+    public List<DeviceRecord> findDeviceRecordByTime(int deviceId, Timestamp startTime, Timestamp endTime) {
+        return deviceRecordMapper.findDeviceRecordByTime(deviceId,startTime,endTime);
+    }
+
+    @Override
+    public DeviceRecord findById(Long id) {
         return deviceRecordMapper.findById(id);
     }
 
