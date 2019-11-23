@@ -143,6 +143,22 @@ public class UserController {
     }
 
     /**
+     * 用户注销登录
+     *
+     * @param username
+     * @return
+     */
+    @AuthToken
+    @PostMapping("logout")
+    public JsonData logout(@RequestParam(value = "username")String username,
+                           @RequestParam(value = "token")String token){
+        Jedis jedis = new Jedis("127.0.0.1", 6379);
+        jedis.del(username,token);
+        jedis.close();
+        return JsonData.buildSuccess("用户注销成功！");
+    }
+
+    /**
      * PoToVo
      *
      * @param user
