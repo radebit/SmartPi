@@ -1,7 +1,9 @@
 package com.radebit.smartpi.model.po;
 
 
-public class DeviceRecord {
+import java.io.Serializable;
+
+public class DeviceRecord implements Serializable {
 
   private Long id;
   private Integer deviceId;

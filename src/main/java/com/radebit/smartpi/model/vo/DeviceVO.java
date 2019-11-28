@@ -9,6 +9,7 @@ import java.sql.Timestamp;
  * 说明：设备视图层对象
  */
 public class DeviceVO implements Serializable {
+
     private Integer id;
     private String name;
     private Integer groupId;
@@ -18,8 +19,8 @@ public class DeviceVO implements Serializable {
     private Integer star;
     private String ip;
     private Integer autoControl;
-    private java.sql.Timestamp createTime;
-    private java.sql.Timestamp lastOnlineTime;
+    private String createTime;
+    private String lastOnlineTime;
     private String remark;
     private String coverImg;
     private Integer isOnline;
@@ -96,19 +97,19 @@ public class DeviceVO implements Serializable {
         this.autoControl = autoControl;
     }
 
-    public Timestamp getCreateTime() {
+    public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(Timestamp createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
-    public Timestamp getLastOnlineTime() {
+    public String getLastOnlineTime() {
         return lastOnlineTime;
     }
 
-    public void setLastOnlineTime(Timestamp lastOnlineTime) {
+    public void setLastOnlineTime(String lastOnlineTime) {
         this.lastOnlineTime = lastOnlineTime;
     }
 

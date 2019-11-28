@@ -9,6 +9,7 @@ import com.radebit.smartpi.model.vo.DeviceVO;
 import com.radebit.smartpi.service.DeviceService;
 import com.radebit.smartpi.service.GroupService;
 import com.radebit.smartpi.service.UserService;
+import com.radebit.smartpi.utils.DateTimeUtils;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -185,6 +186,9 @@ public class DeviceController {
                            @RequestParam(value = "cover_img", required = false) String coverImg,
                            @RequestParam(value = "is_online", required = false) Integer isOnline) {
 
+        if (groupService.findGroupById(groupId) == null) {
+            return JsonData.buildError("分组不存在！", 6001);
+        }
         Device device = new Device();
         device.setId(id);
         device.setName(name);
@@ -199,7 +203,7 @@ public class DeviceController {
         device.setId(isOnline);
 
         if (deviceService.update(device) == 1) {
-            return JsonData.buildSuccess(deviceService.findDeviceById(id), "修改成功！");
+            return JsonData.buildSuccess(PoToVo(deviceService.findDeviceById(id)), "修改成功！");
         }
         return JsonData.buildError("修改失败！");
 
@@ -278,8 +282,8 @@ public class DeviceController {
         deviceVO.setStar(device.getStar());
         deviceVO.setIp(device.getIp());
         deviceVO.setAutoControl(device.getAutoControl());
-        deviceVO.setCreateTime(device.getCreateTime());
-        deviceVO.setLastOnlineTime(device.getLastOnlineTime());
+        deviceVO.setCreateTime(DateTimeUtils.timestampToString(device.getCreateTime(), "yyyy-MM-dd HH:mm:ss"));
+        deviceVO.setLastOnlineTime(DateTimeUtils.timestampToString(device.getLastOnlineTime(), "yyyy-MM-dd HH:mm:ss"));
         deviceVO.setRemark(device.getRemark());
         deviceVO.setCoverImg(device.getCoverImg());
         deviceVO.setIsOnline(device.getIsOnline());

@@ -5,17 +5,16 @@ import com.github.pagehelper.PageInfo;
 import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.DeviceRecord;
+import com.radebit.smartpi.model.vo.DeviceRecordVO;
 import com.radebit.smartpi.service.DeviceRecordService;
 import com.radebit.smartpi.service.DeviceService;
+import com.radebit.smartpi.utils.DateTimeUtils;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @Author Rade
@@ -45,7 +44,11 @@ public class DeviceRecordController {
                             @RequestParam(value = "size", defaultValue = "10") Integer size) {
         PageHelper.startPage(page, size);
         List<DeviceRecord> list = deviceRecordService.findAll();
-        PageInfo<DeviceRecord> pageInfo = new PageInfo<>(list);
+        List<DeviceRecordVO> listVO = new ArrayList<>();
+        for (DeviceRecord deviceRecord : list) {
+            listVO.add(PoToVo(deviceRecord));
+        }
+        PageInfo<DeviceRecordVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
         data.put("total_size", pageInfo.getTotal());//总条数
         data.put("total_page", pageInfo.getPages());//总页数
@@ -69,7 +72,11 @@ public class DeviceRecordController {
 
         PageHelper.startPage(page, size);
         List<DeviceRecord> list = deviceRecordService.findByDeviceId(deviceId);
-        PageInfo<DeviceRecord> pageInfo = new PageInfo<>(list);
+        List<DeviceRecordVO> listVO = new ArrayList<>();
+        for (DeviceRecord deviceRecord : list) {
+            listVO.add(PoToVo(deviceRecord));
+        }
+        PageInfo<DeviceRecordVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
         data.put("total_size", pageInfo.getTotal());//总条数
         data.put("total_page", pageInfo.getPages());//总页数
@@ -97,12 +104,21 @@ public class DeviceRecordController {
         PageHelper.startPage(page, size);
         List<DeviceRecord> list;
 
+        List<DeviceRecordVO> listVO = new ArrayList<>();
+
         if (deviceId == null) {
             list = deviceRecordService.findAllByTime(Timestamp.valueOf(startTime), Timestamp.valueOf(endTime));
+
+            for (DeviceRecord deviceRecord : list) {
+                listVO.add(PoToVo(deviceRecord));
+            }
         } else {
             list = deviceRecordService.findDeviceRecordByTime(deviceId, Timestamp.valueOf(startTime), Timestamp.valueOf(endTime));
+            for (DeviceRecord deviceRecord : list) {
+                listVO.add(PoToVo(deviceRecord));
+            }
         }
-        PageInfo<DeviceRecord> pageInfo = new PageInfo<>(list);
+        PageInfo<DeviceRecordVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
         data.put("total_size", pageInfo.getTotal());//总条数
         data.put("total_page", pageInfo.getPages());//总页数
@@ -161,8 +177,8 @@ public class DeviceRecordController {
                         @RequestParam(value = "illumination") String illumination,
                         @RequestParam(value = "air_quality") String airQuality) {
 
-        if (deviceService.findDeviceById(deviceId)==null){
-            return JsonData.buildError("设备不存在！",601);
+        if (deviceService.findDeviceById(deviceId) == null) {
+            return JsonData.buildError("设备不存在！", 601);
         }
 
         DeviceRecord deviceRecord = new DeviceRecord();
@@ -184,5 +200,32 @@ public class DeviceRecordController {
             return JsonData.buildSuccess(deviceRecord, "新增记录成功！");
         }
         return JsonData.buildError("新增记录失败！");
+    }
+
+
+    /**
+     * PoToVo
+     *
+     * @param deviceRecord
+     * @return
+     */
+    public DeviceRecordVO PoToVo(DeviceRecord deviceRecord) {
+        DeviceRecordVO deviceRecordVO = new DeviceRecordVO();
+        deviceRecordVO.setId(deviceRecord.getId());
+        deviceRecordVO.setDeviceId(deviceRecord.getDeviceId());
+        deviceRecordVO.setRecordTime(DateTimeUtils.timestampToString(deviceRecord.getRecordTime(), "yyyy-MM-dd HH:mm:ss"));
+        deviceRecordVO.setAirTemp(deviceRecord.getAirTemp());
+        deviceRecordVO.setAirHumidity(deviceRecord.getAirHumidity());
+        deviceRecordVO.setSoilMoisture(deviceRecord.getSoilMoisture());
+        deviceRecordVO.setCo2(deviceRecord.getCo2());
+        deviceRecordVO.setnContent(deviceRecord.getNContent());
+        deviceRecordVO.setpContent(deviceRecord.getPContent());
+        deviceRecordVO.setkContent(deviceRecord.getKContent());
+        deviceRecordVO.setSoilFertility(deviceRecord.getSoilFertility());
+        deviceRecordVO.setPh(deviceRecord.getPh());
+        deviceRecordVO.setIllumination(deviceRecord.getIllumination());
+        deviceRecordVO.setAirQuality(deviceRecord.getAirQuality());
+        return deviceRecordVO;
+
     }
 }
