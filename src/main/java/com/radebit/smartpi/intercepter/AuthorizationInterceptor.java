@@ -82,8 +82,8 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
 
                 PrintWriter out = null;
                 try {
-                    response.setStatus(unauthorizedErrorCode);
-                    response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+//                    response.setStatus(unauthorizedErrorCode);
+//                    response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 
                     jsonObject.put("code", ((HttpServletResponse) response).getStatus());
                     jsonObject.put("message", HttpStatus.UNAUTHORIZED);
