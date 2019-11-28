@@ -166,7 +166,6 @@ public class DeviceController {
      * @param star
      * @param ip
      * @param autoControl
-     * @param lastOnlineTime
      * @param remark
      * @param coverImg
      * @param isOnline
@@ -181,7 +180,6 @@ public class DeviceController {
                            @RequestParam(value = "star", required = false) Integer star,
                            @RequestParam(value = "ip", required = false) String ip,
                            @RequestParam(value = "auto_control", required = false) Integer autoControl,
-                           @RequestParam(value = "last_online_time", required = false) String lastOnlineTime,
                            @RequestParam(value = "remark", required = false) String remark,
                            @RequestParam(value = "cover_img", required = false) String coverImg,
                            @RequestParam(value = "is_online", required = false) Integer isOnline) {
@@ -197,10 +195,12 @@ public class DeviceController {
         device.setStar(star);
         device.setIp(ip);
         device.setAutoControl(autoControl);
-        device.setLastOnlineTime(Timestamp.valueOf(lastOnlineTime));
+        if (isOnline==1){
+            device.setLastOnlineTime(new Timestamp(new Date().getTime()));
+        }
         device.setRemark(remark);
         device.setCoverImg(coverImg);
-        device.setId(isOnline);
+        device.setIsOnline(isOnline);
 
         if (deviceService.update(device) == 1) {
             return JsonData.buildSuccess(PoToVo(deviceService.findDeviceById(id)), "修改成功！");
