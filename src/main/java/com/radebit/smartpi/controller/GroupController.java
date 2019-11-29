@@ -3,6 +3,7 @@ package com.radebit.smartpi.controller;
 import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.Group;
+import com.radebit.smartpi.service.DeviceService;
 import com.radebit.smartpi.service.GroupService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,9 @@ public class GroupController {
 
     @Autowired
     private GroupService groupService;
+
+    @Autowired
+    private DeviceService deviceService;
 
     @GetMapping("findAll")
     public JsonData findAll() {
@@ -55,6 +59,10 @@ public class GroupController {
     public JsonData delete(@RequestParam(value = "id") int id) {
         if (id == 0){
             return JsonData.buildError("请勿删除默认分组！",601);
+        }
+
+        if (deviceService.findDeviceByGroup(id)!=null){
+            return JsonData.buildError("该设备分组下还有设备！",602);
         }
         if (groupService.delete(id) == 1){
             return JsonData.buildSuccess("删除成功！");
