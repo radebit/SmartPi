@@ -69,6 +69,9 @@ public class DeviceController {
      */
     @GetMapping("findById")
     public JsonData findById(@RequestParam(value = "id") Integer id) {
+        if (deviceService.findDeviceById(id)==null){
+            return JsonData.buildError("设备不存在！",601);
+        }
         return JsonData.buildSuccess(PoToVo(deviceService.findDeviceById(id)));
     }
 

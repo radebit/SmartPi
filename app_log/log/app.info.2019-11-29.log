@@ -37,3 +37,6 @@
 2019-11-29 19:58:42.630 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:59 -用户登录 - rade
 2019-11-29 19:58:42.631 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:64 -token创建时间 - 1575028705139
 2019-11-29 19:58:42.632 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:66 -token存在 - 17493 ms
+2019-11-29 21:25:12.579 INFO [Thread-55]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-29 21:25:12.597 INFO [Thread-55]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2019-11-29 21:25:12.598 INFO [Thread-55]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed

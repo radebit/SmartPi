@@ -2,6 +2,7 @@ package com.radebit.smartpi.provider;
 
 
 import com.radebit.smartpi.model.po.Device;
+import com.radebit.smartpi.model.po.DeviceSwitch;
 import com.radebit.smartpi.model.po.Group;
 import com.radebit.smartpi.model.po.User;
 import org.apache.ibatis.jdbc.SQL;
@@ -106,6 +107,57 @@ public class UpdateProvider {
             }
 
             WHERE("id = #{id}");
+        }}.toString();
+    }
+
+    /**
+     * 设备开关信息条件更新
+     *
+     * @param deviceSwitch
+     * @return
+     */
+    public String updateDeviceSwitch(final DeviceSwitch deviceSwitch) {
+        return new SQL() {{
+            UPDATE("device_switch");
+
+            if (deviceSwitch.getWater1() != null) {
+                SET("water1 = #{water1}");
+            }
+            if (deviceSwitch.getWater2() != null) {
+                SET("water2 = #{water2}");
+            }
+            if (deviceSwitch.getWater3() != null) {
+                SET("water3 = #{water3}");
+            }
+            if (deviceSwitch.getHeat() != null) {
+                SET("heat = #{heat}");
+            }
+            if (deviceSwitch.getFan() != null) {
+                SET("fan = #{fan}");
+            }
+            if (deviceSwitch.getHumidifier() != null) {
+                SET("humidifier = #{humidifier}");
+            }
+            if (deviceSwitch.getRed() != null) {
+                SET("red = #{red}");
+            }
+            if (deviceSwitch.getBlue() != null) {
+                SET("blue = #{blue}");
+            }
+            if (deviceSwitch.getGreen() != null) {
+                SET("green = #{green}");
+            }
+            if (deviceSwitch.getYellow() != null) {
+                SET("yellow = #{yellow}");
+            }
+            if (deviceSwitch.getIllumination() != null) {
+                SET("illumination = #{illumination}");
+            }
+            if (deviceSwitch.getUltraviolet() != null) {
+                SET("ultraviolet = #{ultraviolet}");
+            }
+
+            WHERE("device_id = #{deviceId}");
         }}.toString();
     }
 }
