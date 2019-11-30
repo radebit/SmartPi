@@ -21,7 +21,7 @@ public interface DeviceSwitchMapper {
     @UpdateProvider(type = com.radebit.smartpi.provider.UpdateProvider.class,method = "updateDeviceSwitch")
     Integer update(DeviceSwitch deviceSwitch);
 
-    @Delete("delete form device_switch where device_id = #{deviceId}")
+    @Delete("DELETE FROM device_switch where device_id = #{deviceId}")
     Integer delete(int deviceId);
 
     @Insert("INSERT INTO `smartpi`.`device_switch`(`device_id`, `water1`, `water2`, `water3`, `heat`, `fan`, `humidifier`, `red`, `blue`, `green`, `yellow`, `Illumination`, `ultraviolet`) VALUES (#{deviceId}, #{water1}, #{water2}, #{water3}, #{heat}, #{fan}, #{humidifier}, #{red}, #{blue}, #{green}, #{yellow}, #{illumination}, #{ultraviolet});")

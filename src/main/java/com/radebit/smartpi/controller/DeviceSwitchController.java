@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.DeviceSwitch;
 import com.radebit.smartpi.service.DeviceService;
@@ -85,6 +86,7 @@ public class DeviceSwitchController {
      * @param ultraviolet
      * @return
      */
+    @AuthToken
     @PutMapping("update")
     public JsonData update(@RequestParam(value = "device_id") Integer deviceId,
                            @RequestParam(value = "water1", required = false) Integer water1,
@@ -120,61 +122,61 @@ public class DeviceSwitchController {
         deviceSwitch.setUltraviolet(ultraviolet);
 
         if (deviceSwitchService.update(deviceSwitch) == 1) {
-            return JsonData.buildSuccess(deviceService.findDeviceById(deviceId), "编辑成功！");
+            return JsonData.buildSuccess(deviceSwitchService.findDeviceSwitchByDeviceId(deviceId), "编辑成功！");
         }
         return JsonData.buildError("编辑失败！");
 
     }
 
-    /**
-     * 删除设备开关记录
-     *
-     * @param deviceId
-     * @return
-     */
-    @DeleteMapping("delete")
-    public JsonData delete(@RequestParam(value = "device_id") Integer deviceId) {
-        if (deviceSwitchService.findDeviceSwitchByDeviceId(deviceId) == null) {
-            return JsonData.buildError("设备不存在！", 601);
-        }
-
-        if (deviceSwitchService.delete(deviceId) == 1) {
-            return JsonData.buildSuccess("删除成功！");
-        }
-        return JsonData.buildError("删除失败！");
-
-    }
-
-    /**
-     * 增加设备开关记录
-     *
-     * @param deviceId
-     * @return
-     */
-    @PostMapping("add")
-    public JsonData add(@RequestParam(value = "device_id") Integer deviceId) {
-        if (deviceService.findDeviceById(deviceId) != null) {
-            return JsonData.buildError("设备ID重复！");
-        }
-        DeviceSwitch deviceSwitch = new DeviceSwitch();
-        deviceSwitch.setDeviceId(deviceId);
-        deviceSwitch.setWater1(0);
-        deviceSwitch.setWater2(0);
-        deviceSwitch.setWater3(0);
-        deviceSwitch.setHeat(0);
-        deviceSwitch.setFan(0);
-        deviceSwitch.setHumidifier(0);
-        deviceSwitch.setRed(0);
-        deviceSwitch.setBlue(0);
-        deviceSwitch.setGreen(0);
-        deviceSwitch.setYellow(0);
-        deviceSwitch.setIllumination(0);
-        deviceSwitch.setUltraviolet(0);
-
-        if (deviceSwitchService.add(deviceSwitch) == 1) {
-            return JsonData.buildSuccess(deviceSwitchService.findDeviceSwitchByDeviceId(deviceId), "新建成功！");
-        }
-
-        return JsonData.buildError("新增失败！");
-    }
+//    /**
+//     * 删除设备开关记录
+//     *
+//     * @param deviceId
+//     * @return
+//     */
+//    @DeleteMapping("delete")
+//    public JsonData delete(@RequestParam(value = "device_id") Integer deviceId) {
+//        if (deviceSwitchService.findDeviceSwitchByDeviceId(deviceId) == null) {
+//            return JsonData.buildError("设备不存在！", 601);
+//        }
+//
+//        if (deviceSwitchService.delete(deviceId) == 1) {
+//            return JsonData.buildSuccess("删除成功！");
+//        }
+//        return JsonData.buildError("删除失败！");
+//
+//    }
+//
+//    /**
+//     * 增加设备开关记录
+//     *
+//     * @param deviceId
+//     * @return
+//     */
+//    @PostMapping("add")
+//    public JsonData add(@RequestParam(value = "device_id") Integer deviceId) {
+//        if (deviceService.findDeviceById(deviceId) != null) {
+//            return JsonData.buildError("设备ID重复！");
+//        }
+//        DeviceSwitch deviceSwitch = new DeviceSwitch();
+//        deviceSwitch.setDeviceId(deviceId);
+//        deviceSwitch.setWater1(0);
+//        deviceSwitch.setWater2(0);
+//        deviceSwitch.setWater3(0);
+//        deviceSwitch.setHeat(0);
+//        deviceSwitch.setFan(0);
+//        deviceSwitch.setHumidifier(0);
+//        deviceSwitch.setRed(0);
+//        deviceSwitch.setBlue(0);
+//        deviceSwitch.setGreen(0);
+//        deviceSwitch.setYellow(0);
+//        deviceSwitch.setIllumination(0);
+//        deviceSwitch.setUltraviolet(0);
+//
+//        if (deviceSwitchService.add(deviceSwitch) == 1) {
+//            return JsonData.buildSuccess(deviceSwitchService.findDeviceSwitchByDeviceId(deviceId), "新建成功！");
+//        }
+//
+//        return JsonData.buildError("新增失败！");
+//    }
 }
