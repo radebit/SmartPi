@@ -34,7 +34,7 @@ public interface DeviceWarnMapper {
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     Integer add(DeviceWarn deviceWarn);
 
-    @Update("UPDATE `smartpi`.`device_warn` SET #{isHandle} = 0 WHERE `id` = #{id};")
+    @Update("UPDATE `smartpi`.`device_warn` SET is_handle = #{isHandle} WHERE `id` = #{id};")
     Integer setWarnHandle(int isHandle,int id);
 
 }

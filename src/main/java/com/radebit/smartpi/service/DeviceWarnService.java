@@ -25,7 +25,5 @@ public interface DeviceWarnService {
 
     Integer add(DeviceWarn deviceWarn);
 
-    Integer setWarnIsHandle(int id);
-
-    Integer setWarnIsNotHandle(int id);
+    Integer setWarnIsHandle(int isHandle,int id);
 }

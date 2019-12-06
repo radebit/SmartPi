@@ -55,12 +55,7 @@ public class DeviceWarnServiceImpl implements DeviceWarnService {
     }
 
     @Override
-    public Integer setWarnIsHandle(int id) {
-        return deviceWarnMapper.setWarnHandle(1,id);
-    }
-
-    @Override
-    public Integer setWarnIsNotHandle(int id) {
-        return deviceWarnMapper.setWarnHandle(0,id);
+    public Integer setWarnIsHandle(int isHandle,int id) {
+        return deviceWarnMapper.setWarnHandle(isHandle,id);
     }
 }
