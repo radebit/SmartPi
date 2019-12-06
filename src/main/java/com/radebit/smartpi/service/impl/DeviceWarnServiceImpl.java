@@ -30,13 +30,13 @@ public class DeviceWarnServiceImpl implements DeviceWarnService {
     }
 
     @Override
-    public List<DeviceWarn> findNotHandle() {
-        return deviceWarnMapper.findNotHandle();
+    public List<DeviceWarn> findNotHandle(int deviceId) {
+        return deviceWarnMapper.findNotHandle(deviceId);
     }
 
     @Override
-    public List<DeviceWarn> findHandle() {
-        return deviceWarnMapper.findHandle();
+    public List<DeviceWarn> findHandle(int deviceId) {
+        return deviceWarnMapper.findHandle(deviceId);
     }
 
     @Override

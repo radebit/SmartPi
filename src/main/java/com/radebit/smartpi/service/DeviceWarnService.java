@@ -15,9 +15,9 @@ public interface DeviceWarnService {
 
     List<DeviceWarn> findByDeviceId(int deviceId);
 
-    List<DeviceWarn> findNotHandle();
+    List<DeviceWarn> findNotHandle(int deviceId);
 
-    List<DeviceWarn> findHandle();
+    List<DeviceWarn> findHandle(int deviceId);
 
     DeviceWarn findById(int id);
 

@@ -18,11 +18,11 @@ public interface DeviceWarnMapper {
     @Select("select * from device_warn where device_id = #{deviceId}")
     List<DeviceWarn> findByDeviceId(int deviceId);
 
-    @Select("select * from device_warn where is_handle = 0")
-    List<DeviceWarn> findNotHandle();
+    @Select("select * from device_warn where is_handle = 0 and device_id = #{deviceId}")
+    List<DeviceWarn> findNotHandle(int deviceId);
 
-    @Select("select * from device_warn where is_handle = 1")
-    List<DeviceWarn> findHandle();
+    @Select("select * from device_warn where is_handle = 1 and device_id = #{deviceId}")
+    List<DeviceWarn> findHandle(int deviceId);
 
     @Select("select * from device_warn where id = #{id}")
     DeviceWarn findById(int id);
