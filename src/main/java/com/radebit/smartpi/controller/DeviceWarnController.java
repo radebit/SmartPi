@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.DeviceWarn;
 import com.radebit.smartpi.model.vo.DeviceWarnVO;
@@ -170,6 +171,7 @@ public class DeviceWarnController {
      * @param id
      * @return
      */
+    @AuthToken
     @DeleteMapping("delete")
     public JsonData delete(@RequestParam(value = "id") Integer id) {
         if (deviceWarnService.delete(id) == 1) {
@@ -185,6 +187,7 @@ public class DeviceWarnController {
      * @param content
      * @return
      */
+    @AuthToken
     @PostMapping("add")
     public JsonData add(@RequestParam(value = "device_id") Integer deviceId,
                         @RequestParam(value = "content") String content) {
@@ -209,6 +212,7 @@ public class DeviceWarnController {
      * @param id
      * @return
      */
+    @AuthToken
     @PutMapping("changeIsHandle")
     public JsonData changeIsHandle(@RequestParam(value = "is_handle") Integer isHandle,
                                    @RequestParam(value = "id") Integer id) {
