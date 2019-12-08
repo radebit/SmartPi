@@ -17,6 +17,7 @@ public class Device implements Serializable {
   private String remark;
   private String coverImg;
   private Integer isOnline;
+  private Integer acId;
 
 
   public Integer getId() {
@@ -123,5 +124,13 @@ public class Device implements Serializable {
 
   public void setIsOnline(Integer isOnline) {
     this.isOnline = isOnline;
+  }
+
+  public Integer getAcId() {
+    return acId;
+  }
+
+  public void setAcId(Integer acId) {
+    this.acId = acId;
   }
 }

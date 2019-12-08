@@ -185,7 +185,8 @@ public class DeviceController {
                            @RequestParam(value = "auto_control", required = false) Integer autoControl,
                            @RequestParam(value = "remark", required = false) String remark,
                            @RequestParam(value = "cover_img", required = false) String coverImg,
-                           @RequestParam(value = "is_online", required = false) Integer isOnline) {
+                           @RequestParam(value = "is_online", required = false) Integer isOnline,
+                           @RequestParam(value = "ac_id", required = false) Integer acId) {
 
         if (groupService.findGroupById(groupId) == null) {
             return JsonData.buildError("分组不存在！", 6001);
@@ -198,6 +199,7 @@ public class DeviceController {
         device.setStar(star);
         device.setIp(ip);
         device.setAutoControl(autoControl);
+        device.setAcId(acId);
         if (isOnline==1){
             device.setLastOnlineTime(new Timestamp(new Date().getTime()));
         }
@@ -237,7 +239,6 @@ public class DeviceController {
      * @param groupId
      * @param ascription
      * @param ip
-     * @param autoControl
      * @param remark
      * @return
      */
@@ -247,7 +248,6 @@ public class DeviceController {
                         @RequestParam(value = "group_id") Integer groupId,
                         @RequestParam(value = "ascription") String ascription,
                         @RequestParam(value = "ip", required = false) String ip,
-                        @RequestParam(value = "auto_control", required = false) Integer autoControl,
                         @RequestParam(value = "remark", required = false) String remark) {
 
         if (userService.findUserByUsername(ascription) == null) {
@@ -259,7 +259,6 @@ public class DeviceController {
         device.setGroupId(groupId);
         device.setAscription(ascriptionId);
         device.setIp(ip);
-        device.setAutoControl(autoControl);
         device.setCreateTime(new Timestamp(new Date().getTime()));
         device.setRemark(remark);
         if (deviceService.add(device) == 1) {
@@ -290,6 +289,7 @@ public class DeviceController {
         deviceVO.setRemark(device.getRemark());
         deviceVO.setCoverImg(device.getCoverImg());
         deviceVO.setIsOnline(device.getIsOnline());
+        deviceVO.setAcId(device.getAcId());
         return deviceVO;
     }
 

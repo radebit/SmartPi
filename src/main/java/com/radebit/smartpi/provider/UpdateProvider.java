@@ -105,6 +105,9 @@ public class UpdateProvider {
             if (device.getIsOnline() != null) {
                 SET("is_online = #{isOnline}");
             }
+            if (device.getAcId() != null) {
+                SET("ac_id = #{acId}");
+            }
 
             WHERE("id = #{id}");
         }}.toString();

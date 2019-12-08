@@ -33,7 +33,7 @@ public interface DeviceMapper {
     @Delete("delete from device where id = #{id}")
     Integer delete(int id);
 
-    @Insert("INSERT INTO `smartpi`.`device`(`name`, `group_id`, `ascription`, `ip`, `auto_control`, `create_time`, `remark`) VALUES (#{name},#{groupId},#{ascription},#{ip},#{autoControl},#{createTime},#{remark});")
+    @Insert("INSERT INTO `smartpi`.`device`(`name`, `group_id`, `ascription`, `ip`, `create_time`, `remark`) VALUES (#{name},#{groupId},#{ascription},#{ip},#{createTime},#{remark});")
     @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     Integer add(Device device);
 }

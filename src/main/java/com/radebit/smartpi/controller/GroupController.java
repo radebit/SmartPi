@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
+import com.radebit.smartpi.model.po.Device;
 import com.radebit.smartpi.model.po.Group;
 import com.radebit.smartpi.service.DeviceService;
 import com.radebit.smartpi.service.GroupService;
@@ -60,8 +61,8 @@ public class GroupController {
         if (id == 0){
             return JsonData.buildError("请勿删除默认分组！",601);
         }
-
-        if (deviceService.findDeviceByGroup(id)!=null){
+        List<Device> deviceList = deviceService.findDeviceByGroup(id);
+        if (deviceList!=null && deviceList.size()!=0){
             return JsonData.buildError("该设备分组下还有设备！",602);
         }
         if (groupService.delete(id) == 1){

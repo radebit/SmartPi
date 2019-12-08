@@ -66,6 +66,7 @@ public class DeviceServiceImpl implements DeviceService {
     public Integer add(Device device) {
         Integer add = deviceMapper.add(device);
 
+        //绑定开关表，新增一条对应记录
         DeviceSwitch deviceSwitch = new DeviceSwitch();
         deviceSwitch.setDeviceId(device.getId());
         deviceSwitch.setWater1(0);
