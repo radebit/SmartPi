@@ -45,6 +45,7 @@ public class UserController {
 
             User user = userService.findUserByUsername(username);
             Jedis jedis = new Jedis("127.0.0.1", 6379);
+            jedis.auth("26564356");
             String token = tokenGenerator.generate(username, password);
             jedis.set(username, password);
             jedis.expire(username, ConstantKit.TOKEN_EXPIRE_TIME);
@@ -153,6 +154,7 @@ public class UserController {
     public JsonData logout(@RequestParam(value = "username")String username,
                            @RequestParam(value = "token")String token){
         Jedis jedis = new Jedis("127.0.0.1", 6379);
+        jedis.auth("26564356");
         jedis.del(username,token);
         jedis.close();
         return JsonData.buildSuccess("用户注销成功！");

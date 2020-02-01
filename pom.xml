@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.radebit</groupId>
-    <artifactId>intbarsys</artifactId>
+    <artifactId>smartpi</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>intbarsys</name>
-    <description>intBarSys</description>
+    <name>smartpi</name>
+    <description>SmartPi</description>
 
     <properties>
         <java.version>1.8</java.version>

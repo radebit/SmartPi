@@ -1,0 +1,251 @@
+2020-02-01 13:15:57.029 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 1451 (/Users/rade/Documents/Java/SmartPi/target/classes started by rade in /Users/rade/Documents/Java/SmartPi)
+2020-02-01 13:15:57.035 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2020-02-01 13:15:57.155 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-01 13:15:57.155 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-01 13:15:58.273 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-01 13:15:58.276 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-01 13:15:58.310 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2020-02-01 13:15:58.667 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9beeff80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-01 13:15:58.983 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2020-02-01 13:15:58.995 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:15:59.003 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-02-01 13:15:59.004 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-01 13:15:59.074 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-02-01 13:15:59.074 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1919 ms
+2020-02-01 13:15:59.843 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-01 13:15:59.968 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:16:00.009 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2020-02-01 13:16:00.262 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-02-01 13:16:00.290 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-02-01 13:16:00.316 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-02-01 13:16:00.437 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-02-01 13:16:00.439 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_1
+2020-02-01 13:16:00.440 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_1
+2020-02-01 13:16:00.447 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_2
+2020-02-01 13:16:00.453 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_1
+2020-02-01 13:16:00.455 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-02-01 13:16:00.458 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_2
+2020-02-01 13:16:00.460 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_3
+2020-02-01 13:16:00.463 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findByIdUsingGET_1
+2020-02-01 13:16:00.468 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-02-01 13:16:00.469 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_3
+2020-02-01 13:16:00.472 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_4
+2020-02-01 13:16:00.474 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_2
+2020-02-01 13:16:00.479 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_4
+2020-02-01 13:16:00.498 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:16:00.530 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2020-02-01 13:16:00.535 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 4.133 seconds (JVM running for 5.263)
+2020-02-01 13:16:07.552 INFO [http-nio-8089-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-01 13:16:07.552 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2020-02-01 13:16:07.560 INFO [http-nio-8089-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 8 ms
+2020-02-01 13:16:07.641 INFO [http-nio-8089-exec-1]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2020-02-01 13:16:07.899 WARN [http-nio-8089-exec-1]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:16:17.333 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:16:49.116 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:16:50.026 WARN [http-nio-8089-exec-6]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:17:15.008 WARN [http-nio-8089-exec-8]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:17:31.545 INFO [Thread-17]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:17:31.565 INFO [Thread-17]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2020-02-01 13:17:31.574 INFO [Thread-17]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2020-02-01 13:17:34.879 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 1477 (/Users/rade/Documents/Java/SmartPi/target/classes started by rade in /Users/rade/Documents/Java/SmartPi)
+2020-02-01 13:17:34.882 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2020-02-01 13:17:34.963 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-01 13:17:34.963 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-01 13:17:35.756 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-01 13:17:35.758 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-01 13:17:35.787 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2020-02-01 13:17:36.022 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6a8d8872] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-01 13:17:36.264 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2020-02-01 13:17:36.274 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:17:36.281 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-02-01 13:17:36.282 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-01 13:17:36.342 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-02-01 13:17:36.342 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1378 ms
+2020-02-01 13:17:37.068 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-01 13:17:37.178 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:17:37.215 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2020-02-01 13:17:37.584 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-02-01 13:17:37.596 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-02-01 13:17:37.626 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-02-01 13:17:37.764 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-02-01 13:17:37.767 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_1
+2020-02-01 13:17:37.770 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_1
+2020-02-01 13:17:37.781 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_2
+2020-02-01 13:17:37.791 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_1
+2020-02-01 13:17:37.799 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-02-01 13:17:37.805 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_2
+2020-02-01 13:17:37.809 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_3
+2020-02-01 13:17:37.816 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findByIdUsingGET_1
+2020-02-01 13:17:37.830 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-02-01 13:17:37.833 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_3
+2020-02-01 13:17:37.838 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_4
+2020-02-01 13:17:37.842 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_2
+2020-02-01 13:17:37.855 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_4
+2020-02-01 13:17:37.896 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:17:37.954 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2020-02-01 13:17:37.964 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.461 seconds (JVM running for 3.889)
+2020-02-01 13:17:39.332 INFO [http-nio-8089-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-01 13:17:39.332 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2020-02-01 13:17:39.338 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 6 ms
+2020-02-01 13:17:39.399 INFO [http-nio-8089-exec-2]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2020-02-01 13:17:39.622 WARN [http-nio-8089-exec-2]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:17:40.490 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:17:41.751 WARN [http-nio-8089-exec-4]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:17:44.845 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:18:17.463 INFO [Thread-14]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:18:17.500 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2020-02-01 13:18:17.505 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2020-02-01 13:18:19.784 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 1500 (/Users/rade/Documents/Java/SmartPi/target/classes started by rade in /Users/rade/Documents/Java/SmartPi)
+2020-02-01 13:18:19.796 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2020-02-01 13:18:19.873 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-01 13:18:19.873 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-01 13:18:20.501 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-01 13:18:20.504 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-01 13:18:20.531 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-02-01 13:18:20.780 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a76560b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-01 13:18:21.025 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2020-02-01 13:18:21.034 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:18:21.040 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-02-01 13:18:21.040 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-01 13:18:21.096 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-02-01 13:18:21.096 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1222 ms
+2020-02-01 13:18:21.753 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-01 13:18:21.864 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:18:21.905 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2020-02-01 13:18:22.135 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-02-01 13:18:22.148 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-02-01 13:18:22.173 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-02-01 13:18:22.282 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-02-01 13:18:22.284 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_1
+2020-02-01 13:18:22.287 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_1
+2020-02-01 13:18:22.293 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_2
+2020-02-01 13:18:22.299 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_1
+2020-02-01 13:18:22.301 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-02-01 13:18:22.305 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_2
+2020-02-01 13:18:22.306 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_3
+2020-02-01 13:18:22.308 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findByIdUsingGET_1
+2020-02-01 13:18:22.315 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-02-01 13:18:22.316 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_3
+2020-02-01 13:18:22.318 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_4
+2020-02-01 13:18:22.320 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_2
+2020-02-01 13:18:22.325 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_4
+2020-02-01 13:18:22.354 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:18:22.396 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2020-02-01 13:18:22.404 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 2.967 seconds (JVM running for 3.607)
+2020-02-01 13:18:28.277 INFO [http-nio-8089-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-01 13:18:28.277 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2020-02-01 13:18:28.285 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 7 ms
+2020-02-01 13:18:28.374 INFO [http-nio-8089-exec-2]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2020-02-01 13:18:28.683 WARN [http-nio-8089-exec-2]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:18:32.670 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:18:37.435 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:18:42.010 INFO [http-nio-8089-exec-6]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 72ca5ba4f36df30214b4645325a5d647 
+2020-02-01 13:18:42.013 WARN [http-nio-8089-exec-6]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:19:19.448 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 367574edf99d050ad2fd1ef8fb09db7f 
+2020-02-01 13:19:19.452 WARN [http-nio-8089-exec-2]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:19:26.498 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 367574edf99d050ad2fd1ef8fb09db7f 
+2020-02-01 13:19:26.500 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:19:32.222 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 367574edf99d050ad2fd1ef8fb09db7f 
+2020-02-01 13:19:32.225 WARN [http-nio-8089-exec-4]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:19:45.796 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:19:59.261 WARN [http-nio-8089-exec-6]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:23:20.947 INFO [Thread-14]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:23:20.963 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2020-02-01 13:23:20.966 INFO [Thread-14]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2020-02-01 13:23:24.619 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 1532 (/Users/rade/Documents/Java/SmartPi/target/classes started by rade in /Users/rade/Documents/Java/SmartPi)
+2020-02-01 13:23:24.621 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2020-02-01 13:23:24.695 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-01 13:23:24.695 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-01 13:23:25.459 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-01 13:23:25.461 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-01 13:23:25.488 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
+2020-02-01 13:23:25.777 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b166972f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-01 13:23:26.064 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2020-02-01 13:23:26.076 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:23:26.087 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-02-01 13:23:26.087 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-01 13:23:26.156 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-02-01 13:23:26.157 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1461 ms
+2020-02-01 13:23:26.961 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-01 13:23:27.067 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:23:27.100 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2020-02-01 13:23:27.311 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-02-01 13:23:27.325 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-02-01 13:23:27.353 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-02-01 13:23:27.497 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-02-01 13:23:27.500 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_1
+2020-02-01 13:23:27.503 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_1
+2020-02-01 13:23:27.510 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_2
+2020-02-01 13:23:27.516 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_1
+2020-02-01 13:23:27.521 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-02-01 13:23:27.524 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_2
+2020-02-01 13:23:27.528 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_3
+2020-02-01 13:23:27.532 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findByIdUsingGET_1
+2020-02-01 13:23:27.539 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-02-01 13:23:27.541 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_3
+2020-02-01 13:23:27.543 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_4
+2020-02-01 13:23:27.545 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_2
+2020-02-01 13:23:27.551 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_4
+2020-02-01 13:23:27.573 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:23:27.602 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2020-02-01 13:23:27.605 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.316 seconds (JVM running for 3.767)
+2020-02-01 13:23:30.415 INFO [http-nio-8089-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-01 13:23:30.416 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2020-02-01 13:23:30.426 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 10 ms
+2020-02-01 13:23:30.517 INFO [http-nio-8089-exec-2]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited
+2020-02-01 13:23:45.409 INFO [http-nio-8089-exec-3]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 37e851af6216ffa6fb1123eadb96b5bc 
+2020-02-01 13:23:45.415 WARN [http-nio-8089-exec-3]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:23:46.436 INFO [http-nio-8089-exec-4]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 37e851af6216ffa6fb1123eadb96b5bc 
+2020-02-01 13:23:46.447 WARN [http-nio-8089-exec-4]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:23:51.541 INFO [http-nio-8089-exec-5]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 37e851af6216ffa6fb1123eadb96b5bc 
+2020-02-01 13:23:51.544 WARN [http-nio-8089-exec-5]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:24:17.480 INFO [http-nio-8089-exec-7]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 8f067dbbe4aa94331534899e85279bd8 
+2020-02-01 13:24:17.485 WARN [http-nio-8089-exec-7]o.s.w.s.m.m.annotation.ExceptionHandlerExceptionResolver.logException:198 -Resolved [redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.]
+2020-02-01 13:25:15.684 INFO [Thread-15]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:208 -Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:25:15.703 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:1965 -{dataSource-1} closing ...
+2020-02-01 13:25:15.709 INFO [Thread-15]com.alibaba.druid.pool.DruidDataSource.close:2037 -{dataSource-1} closed
+2020-02-01 13:25:19.338 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarting:50 -Starting SmartPiApplication on RadedeMacBook-Pro.local with PID 1548 (/Users/rade/Documents/Java/SmartPi/target/classes started by rade in /Users/rade/Documents/Java/SmartPi)
+2020-02-01 13:25:19.355 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStartupProfileInfo:648 -No active profile set, falling back to default profiles: default
+2020-02-01 13:25:19.419 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-01 13:25:19.419 INFO [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-01 13:25:20.200 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:244 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-01 13:25:20.202 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:126 -Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-01 13:25:20.237 INFO [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:182 -Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-02-01 13:25:20.499 INFO [restartedMain]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$afbd8d3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-01 13:25:20.729 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:90 -Tomcat initialized with port(s): 8089 (http)
+2020-02-01 13:25:20.739 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:25:20.745 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-02-01 13:25:20.746 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-02-01 13:25:20.804 INFO [restartedMain]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-02-01 13:25:20.804 INFO [restartedMain]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1385 ms
+2020-02-01 13:25:21.455 INFO [restartedMain]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-01 13:25:21.548 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-01 13:25:21.578 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:57 -LiveReload server is running on port 35729
+2020-02-01 13:25:21.784 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-02-01 13:25:21.797 INFO [restartedMain]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-02-01 13:25:21.822 INFO [restartedMain]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-02-01 13:25:21.934 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_1
+2020-02-01 13:25:21.935 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_1
+2020-02-01 13:25:21.937 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_1
+2020-02-01 13:25:21.943 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_2
+2020-02-01 13:25:21.948 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_1
+2020-02-01 13:25:21.950 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_2
+2020-02-01 13:25:21.953 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_2
+2020-02-01 13:25:21.955 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_3
+2020-02-01 13:25:21.957 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findByIdUsingGET_1
+2020-02-01 13:25:21.962 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: addUsingPOST_3
+2020-02-01 13:25:21.963 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_3
+2020-02-01 13:25:21.964 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: findAllUsingGET_4
+2020-02-01 13:25:21.966 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: updateUsingPUT_2
+2020-02-01 13:25:21.970 INFO [restartedMain]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: deleteUsingDELETE_4
+2020-02-01 13:25:21.986 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8089"]
+2020-02-01 13:25:22.014 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:202 -Tomcat started on port(s): 8089 (http) with context path ''
+2020-02-01 13:25:22.018 INFO [restartedMain]com.radebit.smartpi.SmartPiApplication.logStarted:59 -Started SmartPiApplication in 3.072 seconds (JVM running for 3.525)
+2020-02-01 13:25:25.513 INFO [http-nio-8089-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-01 13:25:25.514 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:524 -Initializing Servlet 'dispatcherServlet'
+2020-02-01 13:25:25.522 INFO [http-nio-8089-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:546 -Completed initialization in 8 ms
+2020-02-01 13:25:25.535 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:54 -请求体中携带的token - 8f067dbbe4aa94331534899e85279bd8 
+2020-02-01 13:25:25.551 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:60 -用户登录 - rade
+2020-02-01 13:25:25.552 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:65 -token创建时间 - 1580534651227
+2020-02-01 13:25:25.552 INFO [http-nio-8089-exec-2]com.radebit.smartpi.intercepter.AuthorizationInterceptor.preHandle:67 -token存在 - 74325 ms
+2020-02-01 13:25:25.605 INFO [http-nio-8089-exec-2]com.alibaba.druid.pool.DruidDataSource.init:1003 -{dataSource-1} inited

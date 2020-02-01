@@ -54,6 +54,7 @@ public class AuthorizationInterceptor implements HandlerInterceptor {
             log.info("请求体中携带的token - {} ", token);
             String username = "";
             Jedis jedis = new Jedis("127.0.0.1", 6379);
+            jedis.auth("26564356");
             if (token != null && token.length() != 0) {
                 username = jedis.get(token);
                 log.info("用户登录 - {}", username);
