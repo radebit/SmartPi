@@ -47,15 +47,19 @@ public class DeviceController {
     public JsonData findAll(@RequestParam(value = "page", defaultValue = "1") Integer page,
                             @RequestParam(value = "size", defaultValue = "10") Integer size) {
         PageHelper.startPage(page, size);
+
         List<Device> list = deviceService.findAll();
+        PageInfo<Device> pageInfoTemp = new PageInfo<>(list);
+
         List<DeviceVO> listVO = new ArrayList<>();
         for (Device device : list) {
             listVO.add(PoToVo(device));
         }
         PageInfo<DeviceVO> pageInfo = new PageInfo<>(listVO);
+
         Map<String, Object> data = new HashMap<>();
-        data.put("total_size", pageInfo.getTotal());//总条数
-        data.put("total_page", pageInfo.getPages());//总页数
+        data.put("total_size", pageInfoTemp.getTotal());//总条数
+        data.put("total_page", pageInfoTemp.getPages());//总页数
         data.put("current_page", page);//当前页
         data.put("data", pageInfo.getList());//数据
         return JsonData.buildSuccess(data);

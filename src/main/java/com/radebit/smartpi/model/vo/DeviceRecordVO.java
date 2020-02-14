@@ -11,6 +11,7 @@ public class DeviceRecordVO implements Serializable {
 
     private Long id;
     private Integer deviceId;
+    private String deviceName;
     private String recordTime;
     private String airTemp;
     private String airHumidity;
@@ -38,6 +39,14 @@ public class DeviceRecordVO implements Serializable {
 
     public void setDeviceId(Integer deviceId) {
         this.deviceId = deviceId;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
     }
 
     public String getRecordTime() {

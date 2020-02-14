@@ -83,9 +83,7 @@ public class DateTimeUtils {
      * @return
      */
     public static String timestampToString(Timestamp timestamp, String format) {
-        Timestamp ts = new Timestamp(System.currentTimeMillis());
-        DateFormat sdf = new SimpleDateFormat(format);
-        return sdf.format(ts);
+        return new SimpleDateFormat(format).format(timestamp);
     }
 
 

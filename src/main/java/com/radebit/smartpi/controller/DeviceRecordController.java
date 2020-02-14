@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
+import com.radebit.smartpi.model.po.Device;
 import com.radebit.smartpi.model.po.DeviceRecord;
 import com.radebit.smartpi.model.vo.DeviceRecordVO;
 import com.radebit.smartpi.service.DeviceRecordService;
@@ -44,14 +45,15 @@ public class DeviceRecordController {
                             @RequestParam(value = "size", defaultValue = "10") Integer size) {
         PageHelper.startPage(page, size);
         List<DeviceRecord> list = deviceRecordService.findAll();
+        PageInfo<DeviceRecord> pageInfoTemp = new PageInfo<>(list);
         List<DeviceRecordVO> listVO = new ArrayList<>();
         for (DeviceRecord deviceRecord : list) {
             listVO.add(PoToVo(deviceRecord));
         }
         PageInfo<DeviceRecordVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
-        data.put("total_size", pageInfo.getTotal());//总条数
-        data.put("total_page", pageInfo.getPages());//总页数
+        data.put("total_size", pageInfoTemp.getTotal());//总条数
+        data.put("total_page", pageInfoTemp.getPages());//总页数
         data.put("current_page", page);//当前页
         data.put("data", pageInfo.getList());//数据
         return JsonData.buildSuccess(data);
@@ -72,14 +74,15 @@ public class DeviceRecordController {
 
         PageHelper.startPage(page, size);
         List<DeviceRecord> list = deviceRecordService.findByDeviceId(deviceId);
+        PageInfo<DeviceRecord> pageInfoTemp = new PageInfo<>(list);
         List<DeviceRecordVO> listVO = new ArrayList<>();
         for (DeviceRecord deviceRecord : list) {
             listVO.add(PoToVo(deviceRecord));
         }
         PageInfo<DeviceRecordVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
-        data.put("total_size", pageInfo.getTotal());//总条数
-        data.put("total_page", pageInfo.getPages());//总页数
+        data.put("total_size", pageInfoTemp.getTotal());//总条数
+        data.put("total_page", pageInfoTemp.getPages());//总页数
         data.put("current_page", page);//当前页
         data.put("data", pageInfo.getList());//数据
         return JsonData.buildSuccess(data);
@@ -213,6 +216,7 @@ public class DeviceRecordController {
         DeviceRecordVO deviceRecordVO = new DeviceRecordVO();
         deviceRecordVO.setId(deviceRecord.getId());
         deviceRecordVO.setDeviceId(deviceRecord.getDeviceId());
+        deviceRecordVO.setDeviceName(deviceService.findDeviceById(deviceRecord.getDeviceId()).getName());
         deviceRecordVO.setRecordTime(DateTimeUtils.timestampToString(deviceRecord.getRecordTime(), "yyyy-MM-dd HH:mm:ss"));
         deviceRecordVO.setAirTemp(deviceRecord.getAirTemp());
         deviceRecordVO.setAirHumidity(deviceRecord.getAirHumidity());

@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
+import com.radebit.smartpi.model.po.DeviceRecord;
 import com.radebit.smartpi.model.po.DeviceWarn;
 import com.radebit.smartpi.model.vo.DeviceWarnVO;
 import com.radebit.smartpi.service.DeviceService;
@@ -108,14 +109,15 @@ public class DeviceWarnController {
         }
         PageHelper.startPage(page, size);
         List<DeviceWarn> list = deviceWarnService.findNotHandle(deviceId);
+        PageInfo<DeviceWarn> pageInfoTemp = new PageInfo<>(list);
         List<DeviceWarnVO> listVO = new ArrayList<>();
         for (DeviceWarn deviceWarn : list) {
             listVO.add(PoToVo(deviceWarn));
         }
         PageInfo<DeviceWarnVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
-        data.put("total_size", pageInfo.getTotal());//总条数
-        data.put("total_page", pageInfo.getPages());//总页数
+        data.put("total_size", pageInfoTemp.getTotal());//总条数
+        data.put("total_page", pageInfoTemp.getPages());//总页数
         data.put("current_page", page);//当前页
         data.put("data", pageInfo.getList());//数据
         return JsonData.buildSuccess(data);
@@ -137,14 +139,15 @@ public class DeviceWarnController {
         }
         PageHelper.startPage(page, size);
         List<DeviceWarn> list = deviceWarnService.findHandle(deviceId);
+        PageInfo<DeviceWarn> pageInfoTemp = new PageInfo<>(list);
         List<DeviceWarnVO> listVO = new ArrayList<>();
         for (DeviceWarn deviceWarn : list) {
             listVO.add(PoToVo(deviceWarn));
         }
         PageInfo<DeviceWarnVO> pageInfo = new PageInfo<>(listVO);
         Map<String, Object> data = new HashMap<>();
-        data.put("total_size", pageInfo.getTotal());//总条数
-        data.put("total_page", pageInfo.getPages());//总页数
+        data.put("total_size", pageInfoTemp.getTotal());//总条数
+        data.put("total_page", pageInfoTemp.getPages());//总页数
         data.put("current_page", page);//当前页
         data.put("data", pageInfo.getList());//数据
         return JsonData.buildSuccess(data);
