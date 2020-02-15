@@ -264,6 +264,7 @@ public class DeviceController {
         device.setAscription(ascriptionId);
         device.setIp(ip);
         device.setCreateTime(new Timestamp(new Date().getTime()));
+        device.setLastOnlineTime(new Timestamp(new Date().getTime()));
         device.setRemark(remark);
         if (deviceService.add(device) == 1) {
             return JsonData.buildSuccess(device, "添加设备成功！");

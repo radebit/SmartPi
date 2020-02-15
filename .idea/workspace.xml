@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd2b68a9-7cc0-4b16-b501-d04bb673e003" name="Default Changelist" comment="修改jedis auth">
-      <change afterPath="$PROJECT_DIR$/app_log/log/app.data.2020-02-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_log/log/app.err.2020-02-14.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app_log/log/app.info.2020-02-14.log" afterDir="false" />
+    <list default="true" id="cd2b68a9-7cc0-4b16-b501-d04bb673e003" name="Default Changelist" comment="修复分页问题，修复时间工具类问题，新增记录VO字段">
+      <change afterPath="$PROJECT_DIR$/app_log/log/app.data.2020-02-15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_log/log/app.err.2020-02-15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app_log/log/app.info.2020-02-15.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/smartpi-0214-2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/smartpi-0214.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_log/log/app.info.2020-02-01.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_log/log/app.info.2020-02-01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_log/log/app.info.2020-02-14.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_log/log/app.info.2020-02-14.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DeviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DeviceRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DeviceRecordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DeviceWarnController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DeviceWarnController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/model/vo/DeviceRecordVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/model/vo/DeviceRecordVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/utils/DateTimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/utils/DateTimeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DeviceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DeviceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DeviceRecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DeviceRecordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DeviceWarnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DeviceWarnController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/model/vo/DeviceRecordVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/model/vo/DeviceRecordVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/utils/DateTimeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/utils/DateTimeUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smartpi-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/smartpi-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smartpi-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/smartpi-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +183,9 @@
       <workItem from="1575725497689" duration="195000" />
       <workItem from="1575789157608" duration="3638000" />
       <workItem from="1580534109238" duration="960000" />
-      <workItem from="1581671319427" duration="3401000" />
+      <workItem from="1581671319427" duration="8276000" />
+      <workItem from="1581693832640" duration="164000" />
+      <workItem from="1581739024452" duration="1299000" />
     </task>
     <task id="LOCAL-00001" summary="po">
       <created>1573803584674</created>
@@ -381,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580534757174</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="修复分页问题，修复时间工具类问题，新增记录VO字段">
+      <created>1581677680489</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1581677680489</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -425,6 +434,29 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="po" />
@@ -446,57 +478,67 @@
     <MESSAGE value="设备预警" />
     <MESSAGE value="设备预警权限新增" />
     <MESSAGE value="修改jedis auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改jedis auth" />
+    <MESSAGE value="修复分页问题，修复时间工具类问题，新增记录VO字段" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复分页问题，修复时间工具类问题，新增记录VO字段" />
   </component>
   <component name="WindowStateProjectService">
     <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1581677190821">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1581677190821" />
-    <state x="601" y="136" key="CommitChangelistDialog2" timestamp="1580534838144">
+    <state x="601" y="136" key="CommitChangelistDialog2" timestamp="1581677680032">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="601" y="136" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1580534838144" />
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1581677616918">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state x="601" y="136" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1581677680032" />
+    <state x="100" y="83" width="1720" height="951" key="DiffContextDialog" timestamp="1581693818766">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363268" />
+    <state x="100" y="83" width="1720" height="951" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1581693818766" />
+    <state x="100" y="100" width="1720" height="880" key="DiffContextDialog/0.23.1920.1000@0.23.1920.1000" timestamp="1581693791896" />
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1581742163648">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163648" />
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616918" />
-    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1581677616917">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1581742163647">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363267" />
+    <state width="1878" height="313" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163647" />
     <state width="1878" height="313" key="GridCell.Tab.0.center/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616917" />
-    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1581677616916">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1581742163646">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363266" />
+    <state width="1878" height="313" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163646" />
     <state width="1878" height="313" key="GridCell.Tab.0.left/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616916" />
-    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1581677616918">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1581742163648">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363267" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163648" />
     <state width="1878" height="313" key="GridCell.Tab.0.right/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616918" />
-    <state width="1878" height="313" key="GridCell.Tab.1.bottom" timestamp="1581677616922">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.1.bottom" timestamp="1581742163650">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363270" />
+    <state width="1878" height="313" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163650" />
     <state width="1878" height="313" key="GridCell.Tab.1.bottom/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616922" />
-    <state width="1878" height="313" key="GridCell.Tab.1.center" timestamp="1581677616920">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.1.center" timestamp="1581742163649">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363269" />
+    <state width="1878" height="313" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163649" />
     <state width="1878" height="313" key="GridCell.Tab.1.center/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616920" />
-    <state width="1878" height="313" key="GridCell.Tab.1.left" timestamp="1581677616919">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.1.left" timestamp="1581742163649">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363268" />
+    <state width="1878" height="313" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163649" />
     <state width="1878" height="313" key="GridCell.Tab.1.left/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616919" />
-    <state width="1878" height="313" key="GridCell.Tab.1.right" timestamp="1581677616921">
-      <screen x="0" y="23" width="1920" height="1000" />
+    <state width="1878" height="313" key="GridCell.Tab.1.right" timestamp="1581742163650">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581676363269" />
+    <state width="1878" height="313" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1581742163650" />
     <state width="1878" height="313" key="GridCell.Tab.1.right/0.23.1920.1000@0.23.1920.1000" timestamp="1581677616921" />
+    <state x="765" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581693855943">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="765" y="464" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1581693855943" />
     <state x="640" y="297" width="639" height="486" key="find.popup" timestamp="1580534697086">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
