@@ -2,9 +2,13 @@ package com.radebit.smartpi.service.impl;
 
 import com.radebit.smartpi.mapper.DeviceMapper;
 import com.radebit.smartpi.model.po.Device;
+import com.radebit.smartpi.model.po.DeviceRecord;
 import com.radebit.smartpi.model.po.DeviceSwitch;
+import com.radebit.smartpi.model.po.DeviceWarn;
+import com.radebit.smartpi.service.DeviceRecordService;
 import com.radebit.smartpi.service.DeviceService;
 import com.radebit.smartpi.service.DeviceSwitchService;
+import com.radebit.smartpi.service.DeviceWarnService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +27,12 @@ public class DeviceServiceImpl implements DeviceService {
 
     @Autowired
     private DeviceSwitchService deviceSwitchService;
+
+    @Autowired
+    private DeviceRecordService deviceRecordService;
+
+    @Autowired
+    private DeviceWarnService deviceWarnService;
 
     @Override
     public List<Device> findAll() {
@@ -56,8 +66,15 @@ public class DeviceServiceImpl implements DeviceService {
 
     @Override
     public Integer delete(int id) {
-        if (deviceSwitchService.delete(id)!=1){
-            return 0;
+        //处理删除设备后同步删除record
+        for (DeviceRecord deviceRecord:deviceRecordService.findByDeviceId(id)){
+            deviceRecordService.delete(deviceRecord.getId());
+        }
+        //处理删除设备后同步删除switch
+        deviceSwitchService.delete(id);
+        //处理删除设备后同步删除warn
+        for (DeviceWarn deviceWarn:deviceWarnService.findByDeviceId(id)){
+            deviceWarnService.delete(deviceWarn.getId());
         }
         return deviceMapper.delete(id);
     }
