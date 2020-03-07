@@ -118,6 +118,11 @@
             <artifactId>jedis</artifactId>
             <version>3.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-core</artifactId>
+            <version>4.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
