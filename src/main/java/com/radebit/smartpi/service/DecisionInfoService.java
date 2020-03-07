@@ -1,6 +1,9 @@
 package com.radebit.smartpi.service;
 
 import com.radebit.smartpi.model.po.DecisionInfo;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface DecisionInfoService {
 
@@ -17,6 +20,9 @@ public interface DecisionInfoService {
 
     int updateByPrimaryKey(DecisionInfo record);
 
+    List<DecisionInfo> selectByDecisionId(@Param("decisionId")Long decisionId);
+
+    int deleteByDecisionId(@Param("decisionId")Long decisionId);
 }
 
 

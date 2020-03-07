@@ -2,6 +2,8 @@ package com.radebit.smartpi.service;
 
 import com.radebit.smartpi.model.po.DecisionGroup;
 
+import java.util.List;
+
 public interface DecisionGroupService {
 
 
@@ -17,5 +19,6 @@ public interface DecisionGroupService {
 
     int updateByPrimaryKey(DecisionGroup record);
 
+    List<DecisionGroup> selectByAll(DecisionGroup decisionGroup);
 }
 

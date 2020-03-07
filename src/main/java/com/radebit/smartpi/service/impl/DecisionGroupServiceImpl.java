@@ -6,6 +6,8 @@ import com.radebit.smartpi.model.po.DecisionGroup;
 import com.radebit.smartpi.mapper.DecisionGroupMapper;
 import com.radebit.smartpi.service.DecisionGroupService;
 
+import java.util.List;
+
 @Service
 public class DecisionGroupServiceImpl implements DecisionGroupService {
 
@@ -40,6 +42,11 @@ public class DecisionGroupServiceImpl implements DecisionGroupService {
     @Override
     public int updateByPrimaryKey(DecisionGroup record) {
         return decisionGroupMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public List<DecisionGroup> selectByAll(DecisionGroup decisionGroup) {
+        return decisionGroupMapper.selectByAll(decisionGroup);
     }
 
 }

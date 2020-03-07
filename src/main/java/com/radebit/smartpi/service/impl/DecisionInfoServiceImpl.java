@@ -6,6 +6,8 @@ import com.radebit.smartpi.mapper.DecisionInfoMapper;
 import com.radebit.smartpi.model.po.DecisionInfo;
 import com.radebit.smartpi.service.DecisionInfoService;
 
+import java.util.List;
+
 @Service
 public class DecisionInfoServiceImpl implements DecisionInfoService {
 
@@ -40,6 +42,16 @@ public class DecisionInfoServiceImpl implements DecisionInfoService {
     @Override
     public int updateByPrimaryKey(DecisionInfo record) {
         return decisionInfoMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public List<DecisionInfo> selectByDecisionId(Long decisionId) {
+        return decisionInfoMapper.selectByDecisionId(decisionId);
+    }
+
+    @Override
+    public int deleteByDecisionId(Long decisionId) {
+        return decisionInfoMapper.deleteByDecisionId(decisionId);
     }
 
 }

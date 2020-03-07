@@ -24,7 +24,7 @@
                   <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/src/main/java" />
                   <option name="javaServicePackage" value="com.radebit.smartpi.service.impl" />
                   <option name="javaServicePath" value="$PROJECT_DIR$/src/main/java" />
-                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPackage" value="mapping" />
                   <option name="xmlPath" value="$PROJECT_DIR$/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
@@ -71,7 +71,7 @@
             </entry>
           </map>
         </option>
-        <option name="xmlMapperPackage" value="mapper" />
+        <option name="xmlMapperPackage" value="mapping" />
         <option name="xmlMapperPath" value="$PROJECT_DIR$/src/main/resources" />
       </ProjectProfile>
     </option>

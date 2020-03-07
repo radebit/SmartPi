@@ -49,5 +49,17 @@ public class DecisionServiceImpl implements DecisionService {
         return decisionMapper.selectByAll(decision);
     }
 
+    @Override
+    public List<Decision> selectByDecisionGroup(String decisionGroup) {
+        return decisionMapper.selectByDecisionGroup(decisionGroup);
+    }
+
+    @Override
+    public Integer countByDecisionGroup(String decisionGroup) {
+        return decisionMapper.countByDecisionGroup(decisionGroup);
+    }
+
 }
+
+
 

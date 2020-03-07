@@ -22,6 +22,7 @@ spring:
 
 # MyBatis配置驼峰命名法,控制台打印输出SQL语句
 mybatis:
+  mapper-locations: classpath:mapping/*.xml
   configuration:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
