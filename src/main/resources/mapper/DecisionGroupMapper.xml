@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.radebit.smartpi.mapper.DecisionGroupMapper">
+  <resultMap id="BaseResultMap" type="com.radebit.smartpi.model.po.DecisionGroup">
+    <!--@mbg.generated-->
+    <!--@Table decision_group-->
+    <id column="group_id" jdbcType="BIGINT" property="groupId" />
+    <result column="group_name" jdbcType="VARCHAR" property="groupName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    group_id, group_name
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--@mbg.generated-->
+    select 
+    <include refid="Base_Column_List" />
+    from decision_group
+    where group_id = #{groupId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <!--@mbg.generated-->
+    delete from decision_group
+    where group_id = #{groupId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="group_id" keyProperty="groupId" parameterType="com.radebit.smartpi.model.po.DecisionGroup" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into decision_group (group_name)
+    values (#{groupName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="group_id" keyProperty="groupId" parameterType="com.radebit.smartpi.model.po.DecisionGroup" useGeneratedKeys="true">
+    <!--@mbg.generated-->
+    insert into decision_group
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="groupName != null">
+        group_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="groupName != null">
+        #{groupName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.radebit.smartpi.model.po.DecisionGroup">
+    <!--@mbg.generated-->
+    update decision_group
+    <set>
+      <if test="groupName != null">
+        group_name = #{groupName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where group_id = #{groupId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.radebit.smartpi.model.po.DecisionGroup">
+    <!--@mbg.generated-->
+    update decision_group
+    set group_name = #{groupName,jdbcType=VARCHAR}
+    where group_id = #{groupId,jdbcType=BIGINT}
+  </update>
+</mapper>

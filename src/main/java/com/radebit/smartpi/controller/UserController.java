@@ -85,7 +85,10 @@ public class UserController {
         user.setUsername(username);
         user.setPassword(SecureUtil.md5(password));
         user.setEmail(email);
-        user.setPhone(phone);
+        if (phone!=null)
+            if (userService.findUserByPhone(phone)!=null)
+                return JsonData.buildError("手机号已存在！");
+            user.setPhone(phone);
         if (userService.add(user)==1){
             return JsonData.buildSuccess(user,"用户注册成功！");
         }

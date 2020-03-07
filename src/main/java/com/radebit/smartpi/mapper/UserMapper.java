@@ -27,6 +27,14 @@ public interface UserMapper {
     User findUserByUsername(String username);
 
     /**
+     * 通过手机号查找用户
+     * @param phone
+     * @return
+     */
+    @Select("select * from user where phone = #{phone}")
+    User findUserByPhone(String phone);
+
+    /**
      * 更新用户信息
      * @param user
      * @return

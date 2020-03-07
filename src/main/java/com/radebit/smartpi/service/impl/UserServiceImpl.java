@@ -29,6 +29,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User findUserByPhone(String phone) {
+        return userMapper.findUserByPhone(phone);
+    }
+
+    @Override
     public boolean checkLogin(String username, String password) {
         if (userMapper.findUserByUsername(username)==null){
             return false;

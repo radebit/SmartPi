@@ -14,6 +14,8 @@ public interface UserService {
 
     User findUserByUsername(String username);
 
+    User findUserByPhone(String phone);
+
     boolean checkLogin(String username,String password);
 
     Integer update(User user);
