@@ -1,46 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd2b68a9-7cc0-4b16-b501-d04bb673e003" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DecisionGroupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DecisionInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/radebit/smartpi/common/SqlTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+    <list default="true" id="cd2b68a9-7cc0-4b16-b501-d04bb673e003" name="Default Changelist" comment="完成决策粗略内容以及决策分组">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app_log/log/app.err.2020-03-07.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_log/log/app.err.2020-03-07.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app_log/log/app.info.2020-03-07.log" beforeDir="false" afterPath="$PROJECT_DIR$/app_log/log/app.info.2020-03-07.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DecisionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DecisionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/mapper/DecisionGroupMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/mapper/DecisionGroupMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/mapper/DecisionInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/mapper/DecisionInfoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/mapper/DecisionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/mapper/DecisionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/model/vo/DecisionInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/model/vo/DecisionVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/DecisionGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/DecisionGroupService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/DecisionInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/DecisionInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/DecisionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/DecisionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/impl/DecisionGroupServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/impl/DecisionGroupServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/impl/DecisionInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/impl/DecisionInfoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/impl/DecisionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/service/impl/DecisionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DecisionGroupMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DecisionGroupMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DecisionInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DecisionInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DecisionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DecisionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DecisionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/controller/DecisionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/mapper/DecisionGroupMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/mapper/DecisionGroupMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/mapper/DecisionInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/mapper/DecisionInfoMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/model/po/DecisionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/model/po/DecisionInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/DecisionInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/DecisionInfoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/impl/DecisionGroupServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/impl/DecisionGroupServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/impl/DecisionInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/impl/DecisionInfoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DecisionGroupMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DecisionInfoMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smartpi-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smartpi-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DecisionInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/radebit/smartpi/controller/DecisionInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapping/DecisionInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapping/DecisionInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/DecisionGroupService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/radebit/smartpi/service/DecisionGroupService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +201,7 @@
       <workItem from="1583318262032" duration="551000" />
       <workItem from="1583502799431" duration="376000" />
       <workItem from="1583562288055" duration="6354000" />
-      <workItem from="1583572093564" duration="5908000" />
+      <workItem from="1583572093564" duration="6694000" />
     </task>
     <task id="LOCAL-00001" summary="po">
       <created>1573803584674</created>
@@ -475,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583570280758</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="完成决策粗略内容以及决策分组">
+      <created>1583579552224</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1583579552224</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -539,7 +512,8 @@
     <MESSAGE value="优化设备删除逻辑" />
     <MESSAGE value="混淆设计" />
     <MESSAGE value="Decision创建基础" />
-    <option name="LAST_COMMIT_MESSAGE" value="Decision创建基础" />
+    <MESSAGE value="完成决策粗略内容以及决策分组" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成决策粗略内容以及决策分组" />
   </component>
   <component name="WindowStateProjectService">
     <state x="773" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1583579470463">
@@ -550,10 +524,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="323" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1583573804571" />
-    <state x="601" y="136" key="CommitChangelistDialog2" timestamp="1583570280537">
+    <state x="601" y="136" key="CommitChangelistDialog2" timestamp="1583579551608">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="601" y="136" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583570280537" />
+    <state x="601" y="136" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1583579551608" />
     <state x="100" y="83" width="1720" height="951" key="DiffContextDialog" timestamp="1581693818766">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -563,54 +537,54 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="148" y="185" key="FileDocumentManager.FileCacheConflict/0.0.1920.1080@0.0.1920.1080" timestamp="1583572222021" />
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1583579498785">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1878" height="398" key="GridCell.Tab.0.bottom" timestamp="1583580378409">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402149" />
+    <state width="1878" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378409" />
     <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260241" />
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498785" />
-    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1583579498784">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.0.bottom/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922158" />
+    <state width="1878" height="398" key="GridCell.Tab.0.center" timestamp="1583580378408">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402148" />
+    <state width="1878" height="398" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378408" />
     <state width="1878" height="313" key="GridCell.Tab.0.center/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260239" />
-    <state width="1878" height="313" key="GridCell.Tab.0.center/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498784" />
-    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1583579498783">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.0.center/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922157" />
+    <state width="1878" height="398" key="GridCell.Tab.0.left" timestamp="1583580378407">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402147" />
+    <state width="1878" height="398" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378407" />
     <state width="1878" height="313" key="GridCell.Tab.0.left/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260239" />
-    <state width="1878" height="313" key="GridCell.Tab.0.left/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498783" />
-    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1583579498784">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.0.left/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922156" />
+    <state width="1878" height="398" key="GridCell.Tab.0.right" timestamp="1583580378409">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402148" />
+    <state width="1878" height="398" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378409" />
     <state width="1878" height="313" key="GridCell.Tab.0.right/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260240" />
-    <state width="1878" height="313" key="GridCell.Tab.0.right/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498784" />
-    <state width="1878" height="313" key="GridCell.Tab.1.bottom" timestamp="1583579498787">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.0.right/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922158" />
+    <state width="1878" height="398" key="GridCell.Tab.1.bottom" timestamp="1583580378411">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402150" />
+    <state width="1878" height="398" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378411" />
     <state width="1878" height="313" key="GridCell.Tab.1.bottom/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260242" />
-    <state width="1878" height="313" key="GridCell.Tab.1.bottom/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498787" />
-    <state width="1878" height="313" key="GridCell.Tab.1.center" timestamp="1583579498786">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.1.bottom/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922159" />
+    <state width="1878" height="398" key="GridCell.Tab.1.center" timestamp="1583580378410">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402149" />
+    <state width="1878" height="398" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378410" />
     <state width="1878" height="313" key="GridCell.Tab.1.center/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260241" />
-    <state width="1878" height="313" key="GridCell.Tab.1.center/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498786" />
-    <state width="1878" height="313" key="GridCell.Tab.1.left" timestamp="1583579498785">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.1.center/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922159" />
+    <state width="1878" height="398" key="GridCell.Tab.1.left" timestamp="1583580378410">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402149" />
+    <state width="1878" height="398" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378410" />
     <state width="1878" height="313" key="GridCell.Tab.1.left/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260241" />
-    <state width="1878" height="313" key="GridCell.Tab.1.left/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498785" />
-    <state width="1878" height="313" key="GridCell.Tab.1.right" timestamp="1583579498786">
-      <screen x="50" y="23" width="1870" height="1057" />
+    <state width="1255" height="313" key="GridCell.Tab.1.left/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922159" />
+    <state width="1878" height="398" key="GridCell.Tab.1.right" timestamp="1583580378411">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583579402150" />
+    <state width="1878" height="398" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1583580378411" />
     <state width="1878" height="313" key="GridCell.Tab.1.right/0.23.1920.1000@0.23.1920.1000" timestamp="1581758260242" />
-    <state width="1878" height="313" key="GridCell.Tab.1.right/50.23.1870.1057@50.23.1870.1057" timestamp="1583579498786" />
+    <state width="1255" height="313" key="GridCell.Tab.1.right/50.23.1870.1057@50.23.1870.1057" timestamp="1583579922159" />
     <state width="219" height="457" key="HiddenNamespacesPopup" timestamp="1583564856111">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

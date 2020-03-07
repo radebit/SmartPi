@@ -227,7 +227,8 @@
   <update id="updateByPrimaryKey" parameterType="com.radebit.smartpi.model.po.DecisionInfo">
     <!--@mbg.generated-->
     update decision_info
-    set decision_id = #{decisionId,jdbcType=BIGINT},
+    set
+<!--    decision_id = #{decisionId,jdbcType=BIGINT},-->
       start_time = #{startTime,jdbcType=TIME},
       end_time = #{endTime,jdbcType=TIME},
       air_temp = #{airTemp,jdbcType=VARCHAR},
