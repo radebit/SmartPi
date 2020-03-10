@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.Decision;
 import com.radebit.smartpi.model.po.DecisionGroup;
@@ -35,7 +36,7 @@ public class DecisionGroupController {
     @GetMapping(value = "/list")
     public JsonData list(@RequestParam(value = "page", defaultValue = "1") Integer page,
                          @RequestParam(value = "size", defaultValue = "10") Integer size,
-                         @RequestBody DecisionGroup decisionGroup){
+                         DecisionGroup decisionGroup){
         PageHelper.startPage(page, size);
         List<DecisionGroup> list = decisionGroupService.selectByAll(decisionGroup);
         PageInfo<DecisionGroup> pageInfo = new PageInfo<>(list);
@@ -47,6 +48,7 @@ public class DecisionGroupController {
         return JsonData.buildSuccess(data);
     }
 
+    @AuthToken
     @PostMapping()
     public JsonData add(@RequestBody DecisionGroup decisionGroup){
         if (decisionGroupService.insert(decisionGroup)==1)
@@ -54,6 +56,7 @@ public class DecisionGroupController {
         return JsonData.buildError("新建失败！");
     }
 
+    @AuthToken
     @PutMapping()
     public JsonData update(@RequestBody DecisionGroup decisionGroup){
         if (decisionGroupService.updateByPrimaryKey(decisionGroup)==1)
@@ -61,6 +64,7 @@ public class DecisionGroupController {
         return JsonData.buildError("编辑失败！");
     }
 
+    @AuthToken
     @DeleteMapping()
     public JsonData delete(String groupId){
         //查询该分组下是否还存在决策内容

@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.Decision;
 import com.radebit.smartpi.model.vo.DecisionVO;
@@ -37,7 +38,7 @@ public class DecisionController {
     @GetMapping(value = "/list")
     public JsonData findDecisionList(@RequestParam(value = "page", defaultValue = "1") Integer page,
                                      @RequestParam(value = "size", defaultValue = "10") Integer size,
-                                     @RequestBody Decision decision) {
+                                     Decision decision) {
         PageHelper.startPage(page, size);
 
         List<Decision> list = decisionService.selectByAll(decision);
@@ -59,7 +60,7 @@ public class DecisionController {
         return JsonData.buildSuccess(data);
     }
 
-
+    @AuthToken
     @PostMapping()
     public JsonData add(@RequestBody Decision decision){
         decision.setCreateTime(new Date());
@@ -68,6 +69,7 @@ public class DecisionController {
         return JsonData.buildError("新建失败！");
     }
 
+    @AuthToken
     @PutMapping()
     public JsonData update(@RequestBody Decision decision){
         if (decisionService.updateByPrimaryKey(decision)==1)
@@ -75,6 +77,7 @@ public class DecisionController {
         return JsonData.buildError("编辑失败！");
     }
 
+    @AuthToken
     @DeleteMapping()
     public JsonData delete(String decisionId){
         if (decisionService.deleteByPrimaryKey(Long.valueOf(decisionId))==1){

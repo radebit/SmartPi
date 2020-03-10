@@ -2,6 +2,7 @@ package com.radebit.smartpi.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.radebit.smartpi.controller.annotation.AuthToken;
 import com.radebit.smartpi.domain.JsonData;
 import com.radebit.smartpi.model.po.DecisionGroup;
 import com.radebit.smartpi.model.po.DecisionInfo;
@@ -35,7 +36,7 @@ public class DecisionInfoController {
     @GetMapping(value = "/list")
     public JsonData list(@RequestParam(value = "page", defaultValue = "1") Integer page,
                          @RequestParam(value = "size", defaultValue = "10") Integer size,
-                         @RequestBody DecisionInfo decisionInfo){
+                         DecisionInfo decisionInfo){
         PageHelper.startPage(page, size);
         List<DecisionInfo> list = decisionInfoService.selectByDecisionId(decisionInfo.getDecisionId());
         PageInfo<DecisionInfo> pageInfo = new PageInfo<>(list);
@@ -47,6 +48,7 @@ public class DecisionInfoController {
         return JsonData.buildSuccess(data);
     }
 
+    @AuthToken
     @PostMapping()
     public JsonData add(@RequestBody DecisionInfo decisionInfo){
         if (decisionService.selectByPrimaryKey(decisionInfo.getDecisionId())==null)
@@ -56,6 +58,7 @@ public class DecisionInfoController {
         return JsonData.buildError("新建失败！");
     }
 
+    @AuthToken
     @PutMapping()
     public JsonData update(@RequestBody DecisionInfo decisionInfo){
         if (decisionInfoService.updateByPrimaryKey(decisionInfo)==1)
@@ -63,6 +66,7 @@ public class DecisionInfoController {
         return JsonData.buildError("编辑失败！");
     }
 
+    @AuthToken
     @DeleteMapping()
     public JsonData delete(String decisionUuid){
         if (decisionInfoService.deleteByPrimaryKey(Long.valueOf(decisionUuid))==1){
